@@ -285,8 +285,8 @@
 
                 <ImageView
                     android:id="@+id/image_view_5"
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
+                    android:layout_width="267dp"
+                    android:layout_height="201dp"
                     android:layout_centerInParent="true"
                     android:adjustViewBounds="true"
                     android:contentDescription="@string/title_painting_15"
