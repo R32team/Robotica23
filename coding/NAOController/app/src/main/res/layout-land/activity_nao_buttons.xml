@@ -67,16 +67,17 @@
         app:layout_constraintVertical_bias="0" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="1134dp"
+        android:layout_width="match_parent"
         android:layout_height="605dp"
-        android:layout_marginHorizontal="50dp"
+        android:layout_marginHorizontal="10dp"
         android:layout_marginTop="200dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.793">
+        app:layout_constraintVertical_bias="1.0">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/btn_1"
@@ -96,14 +97,14 @@
 
                 <ImageView
                     android:id="@+id/image_view_1"
-                    android:layout_width="267dp"
-                    android:layout_height="192dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_centerInParent="true"
                     android:adjustViewBounds="true"
                     android:contentDescription="@string/title_painting_11"
                     android:scaleType="centerCrop"
                     android:src="@drawable/painting_11"
-                    app:layout_constraintDimensionRatio="25:18"
+                    app:layout_constraintDimensionRatio="25:20"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
@@ -112,7 +113,7 @@
                 <TextView
                     style="@style/TitleTextStyle"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="0dp"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="@string/title_painting_11"
@@ -142,14 +143,14 @@
 
                 <ImageView
                     android:id="@+id/image_view_2"
-                    android:layout_width="250dp"
-                    android:layout_height="194dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_centerInParent="true"
                     android:adjustViewBounds="true"
                     android:contentDescription="@string/title_painting_12"
                     android:scaleType="centerCrop"
                     android:src="@drawable/painting_12"
-                    app:layout_constraintDimensionRatio="25:18"
+                    app:layout_constraintDimensionRatio="25:20"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -157,7 +158,7 @@
                 <TextView
                     style="@style/TitleTextStyle"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="0dp"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="@string/title_painting_12"
@@ -194,7 +195,7 @@
                     android:contentDescription="@string/title_painting_13"
                     android:scaleType="centerCrop"
                     android:src="@drawable/painting_13"
-                    app:layout_constraintDimensionRatio="25:18"
+                    app:layout_constraintDimensionRatio="25:20"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -202,7 +203,7 @@
                 <TextView
                     style="@style/TitleTextStyle"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="0dp"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="@string/title_painting_13"
@@ -212,16 +213,6 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/image_view_3" />
 
-                <ImageView
-                    android:id="@+id/image_view_1"
-                    android:layout_width="246dp"
-                    android:layout_height="189dp"
-                    android:layout_centerInParent="true"
-                    android:adjustViewBounds="true"
-                    android:contentDescription="@string/title_painting_19"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/painting_11" />
-
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.cardview.widget.CardView>
@@ -229,9 +220,10 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/btn_4"
             style="@style/ClickableButtonStyle"
+            android:layout_marginRight="20dp"
             android:layout_marginBottom="20dp"
             app:layout_constraintBottom_toTopOf="@+id/btn_8"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_9"
             app:layout_constraintStart_toEndOf="@id/btn_3"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -248,15 +240,15 @@
                     android:contentDescription="@string/title_painting_14"
                     android:scaleType="centerCrop"
                     android:src="@drawable/painting_14"
-                    app:layout_constraintDimensionRatio="25:18"
+                    app:layout_constraintDimensionRatio="25:20"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     style="@style/TitleTextStyle"
-                    android:layout_width="264dp"
-                    android:layout_height="61dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="@string/title_painting_14"
@@ -285,14 +277,14 @@
 
                 <ImageView
                     android:id="@+id/image_view_5"
-                    android:layout_width="267dp"
-                    android:layout_height="201dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_centerInParent="true"
                     android:adjustViewBounds="true"
                     android:contentDescription="@string/title_painting_15"
                     android:scaleType="centerCrop"
                     android:src="@drawable/painting_15"
-                    app:layout_constraintDimensionRatio="25:18"
+                    app:layout_constraintDimensionRatio="25:20"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -300,7 +292,7 @@
                 <TextView
                     style="@style/TitleTextStyle"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="0dp"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="@string/title_painting_15"
@@ -336,15 +328,15 @@
                     android:contentDescription="@string/title_painting_16"
                     android:scaleType="centerCrop"
                     android:src="@drawable/painting_16"
-                    app:layout_constraintDimensionRatio="25:18"
+                    app:layout_constraintDimensionRatio="25:20"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     style="@style/TitleTextStyle"
-                    android:layout_width="268dp"
-                    android:layout_height="53dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="@string/title_painting_16"
@@ -380,15 +372,15 @@
                     android:contentDescription="@string/title_painting_17"
                     android:scaleType="centerCrop"
                     android:src="@drawable/painting_17"
-                    app:layout_constraintDimensionRatio="25:18"
+                    app:layout_constraintDimensionRatio="25:20"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     style="@style/TitleTextStyle"
-                    android:layout_width="267dp"
-                    android:layout_height="62dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="@string/title_painting_17"
@@ -405,8 +397,9 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/btn_8"
             style="@style/ClickableButtonStyle"
+            android:layout_marginRight="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btn_10"
             app:layout_constraintStart_toEndOf="@id/btn_7"
             app:layout_constraintTop_toBottomOf="@id/btn_4">
 
@@ -423,15 +416,15 @@
                     android:contentDescription="@string/title_painting_18"
                     android:scaleType="centerCrop"
                     android:src="@drawable/painting_18"
-                    app:layout_constraintDimensionRatio="25:18"
+                    app:layout_constraintDimensionRatio="25:20"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     style="@style/TitleTextStyle"
-                    android:layout_width="266dp"
-                    android:layout_height="57dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="@string/title_painting_18"
@@ -440,8 +433,100 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/image_view_8"
-                    app:layout_constraintVertical_bias="0.559" />
+                    app:layout_constraintTop_toBottomOf="@+id/image_view_8" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btn_9"
+            style="@style/ClickableButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_4"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/image_view_9"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerInParent="true"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/title_painting_11"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/painting_11"
+                    app:layout_constraintDimensionRatio="25:20"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    style="@style/TitleTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/title_painting_11"
+                    android:textSize="23sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/image_view_9" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btn_10"
+            style="@style/ClickableButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_8"
+            app:layout_constraintTop_toBottomOf="@+id/btn_9">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/image_view_10"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerInParent="true"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/title_painting_11"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/painting_11"
+                    app:layout_constraintDimensionRatio="25:20"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    style="@style/TitleTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/title_painting_11"
+                    android:textSize="23sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/image_view_10" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
