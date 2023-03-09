@@ -24,10 +24,11 @@ void setup()
 #define PWMA 5
 #define AIN2 4
 #define AIN1 6
-#define STBY 7
+#define STBY 7 // Non collegabile
 #define BIN1 8
 #define BIN2 9
 #define PWMB 10
+
 // queste costanti vengono utilizzate per consentire di configurare i
 // motori e allinea con nomi di funzioni come forward.
 // Il valore può essere 1 o -1
