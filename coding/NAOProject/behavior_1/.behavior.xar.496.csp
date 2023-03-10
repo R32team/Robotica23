@@ -190,7 +190,7 @@ class MyClass(GeneratedClass):
               <Output name="output_9" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="12" />
               <Output name="output_10" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="13" />
             </Box>
-            <Box name="Picture 1 (119)" id="3" localization="8" tooltip="LA RUINA" x="677" y="42">
+            <Box name="Picture 1" id="3" localization="8" tooltip="LA RUINA" x="677" y="42">
               <bitmap>media/images/box/box-diagram.png</bitmap>
               <script language="4">
                 <content>
@@ -388,7 +388,7 @@ class MyClass(GeneratedClass):
               <Input name="onStart" type="1" type_size="1" nature="1" inner="0" tooltip="To send the text on the output." id="2" />
               <Output name="onStopped" type="3" type_size="1" nature="2" inner="0" tooltip="The text you entered." id="3" />
             </Box>
-            <Box name="HOME 1 (68)" id="12" localization="8" tooltip="" x="835" y="41">
+            <Box name="HOME 1" id="12" localization="8" tooltip="" x="835" y="41">
               <bitmap>media/images/box/box-diagram.png</bitmap>
               <script language="4">
                 <content>
@@ -4507,7 +4507,7 @@ class MyClass(GeneratedClass):
                 </BehaviorLayer>
               </Timeline>
             </Box>
-            <Box name="Picture 3 (112)" id="4" localization="8" tooltip="LA SELVA" x="683" y="264">
+            <Box name="Picture 3" id="4" localization="8" tooltip="LA SELVA" x="683" y="264">
               <bitmap>media/images/box/box-diagram.png</bitmap>
               <script language="4">
                 <content>
@@ -4683,7 +4683,7 @@ class MyClass(GeneratedClass):
                 </BehaviorLayer>
               </Timeline>
             </Box>
-            <Box name="HOME 3 (68)" id="5" localization="8" tooltip="" x="841" y="263">
+            <Box name="HOME 3" id="5" localization="8" tooltip="" x="841" y="263">
               <bitmap>media/images/box/box-diagram.png</bitmap>
               <script language="4">
                 <content>
@@ -8961,7 +8961,7 @@ class MyClass(GeneratedClass):
                 </BehaviorLayer>
               </Timeline>
             </Box>
-            <Box name="Picture 4 (108)" id="7" localization="8" tooltip="CAPANEO" x="686" y="380">
+            <Box name="Picture 4" id="7" localization="8" tooltip="CAPANEO" x="686" y="380">
               <bitmap>media/images/box/box-diagram.png</bitmap>
               <script language="4">
                 <content>
@@ -9137,7 +9137,7 @@ class MyClass(GeneratedClass):
                 </BehaviorLayer>
               </Timeline>
             </Box>
-            <Box name="HOME 4 (68)" id="8" localization="8" tooltip="" x="852" y="387">
+            <Box name="HOME 4" id="8" localization="8" tooltip="" x="852" y="387">
               <bitmap>media/images/box/box-diagram.png</bitmap>
               <script language="4">
                 <content>
@@ -13614,7 +13614,7 @@ class MyClass(GeneratedClass):
                 </BehaviorLayer>
               </Timeline>
             </Box>
-            <Box name="Picture 5 (107)" id="10" localization="8" tooltip="BRUNETTO" x="692" y="525">
+            <Box name="Picture 5" id="10" localization="8" tooltip="BRUNETTO" x="692" y="525">
               <bitmap>media/images/box/box-diagram.png</bitmap>
               <script language="4">
                 <content>
@@ -13790,7 +13790,7 @@ class MyClass(GeneratedClass):
                 </BehaviorLayer>
               </Timeline>
             </Box>
-            <Box name="HOME 5 (68)" id="11" localization="8" tooltip="" x="850" y="524">
+            <Box name="HOME 5" id="11" localization="8" tooltip="" x="850" y="524">
               <bitmap>media/images/box/box-diagram.png</bitmap>
               <script language="4">
                 <content>
@@ -18068,7 +18068,7 @@ class MyClass(GeneratedClass):
                 </BehaviorLayer>
               </Timeline>
             </Box>
-            <Box name="Picture 6 (85)" id="9" localization="8" tooltip="IL POZZO" x="701" y="663">
+            <Box name="Picture 6" id="9" localization="8" tooltip="IL POZZO" x="701" y="663">
               <bitmap>media/images/box/box-diagram.png</bitmap>
               <script language="4">
                 <content>
@@ -18244,7 +18244,7 @@ class MyClass(GeneratedClass):
                 </BehaviorLayer>
               </Timeline>
             </Box>
-            <Box name="HOME 6 (68)" id="13" localization="8" tooltip="" x="859" y="662">
+            <Box name="HOME 6" id="13" localization="8" tooltip="" x="859" y="662">
               <bitmap>media/images/box/box-diagram.png</bitmap>
               <script language="4">
                 <content>
@@ -22522,7 +22522,7 @@ class MyClass(GeneratedClass):
                 </BehaviorLayer>
               </Timeline>
             </Box>
-            <Box name="Picture 7 (84)" id="14" localization="8" tooltip="GERIONE" x="703" y="785">
+            <Box name="Picture 7" id="14" localization="8" tooltip="GERIONE" x="703" y="785">
               <bitmap>media/images/box/box-diagram.png</bitmap>
               <script language="4">
                 <content>
@@ -22698,7 +22698,7 @@ class MyClass(GeneratedClass):
                 </BehaviorLayer>
               </Timeline>
             </Box>
-            <Box name="HOME 7 (68)" id="15" localization="8" tooltip="" x="861" y="784">
+            <Box name="HOME 7" id="15" localization="8" tooltip="" x="861" y="784">
               <bitmap>media/images/box/box-diagram.png</bitmap>
               <script language="4">
                 <content>
@@ -26976,7 +26976,7 @@ class MyClass(GeneratedClass):
                 </BehaviorLayer>
               </Timeline>
             </Box>
-            <Box name="Picture 8 (80)" id="16" localization="8" tooltip="GLI ADULATORI" x="707" y="914">
+            <Box name="Picture 8" id="16" localization="8" tooltip="GLI ADULATORI" x="707" y="914">
               <bitmap>media/images/box/box-diagram.png</bitmap>
               <script language="4">
                 <content>
@@ -27152,7 +27152,7 @@ class MyClass(GeneratedClass):
                 </BehaviorLayer>
               </Timeline>
             </Box>
-            <Box name="HOME 8 (68)" id="17" localization="8" tooltip="" x="865" y="913">
+            <Box name="HOME 8" id="17" localization="8" tooltip="" x="865" y="913">
               <bitmap>media/images/box/box-diagram.png</bitmap>
               <script language="4">
                 <content>
@@ -31430,7 +31430,7 @@ class MyClass(GeneratedClass):
                 </BehaviorLayer>
               </Timeline>
             </Box>
-            <Box name="Picture 2 (114)" id="20" localization="8" tooltip="I CENTAURI" x="682" y="144">
+            <Box name="Picture 2" id="20" localization="8" tooltip="I CENTAURI" x="682" y="144">
               <bitmap>media/images/box/box-diagram.png</bitmap>
               <script language="4">
                 <content>
@@ -31606,7 +31606,7 @@ class MyClass(GeneratedClass):
                 </BehaviorLayer>
               </Timeline>
             </Box>
-            <Box name="HOME 2 (68)" id="21" localization="8" tooltip="" x="840" y="148">
+            <Box name="HOME 2" id="21" localization="8" tooltip="" x="840" y="148">
               <bitmap>media/images/box/box-diagram.png</bitmap>
               <script language="4">
                 <content>
@@ -35977,6 +35977,10 @@ class MyClass(GeneratedClass):
               <Output name="error6r" type="1" type_size="1" nature="2" inner="0" tooltip="" id="18" />
               <Output name="error7r" type="1" type_size="1" nature="2" inner="0" tooltip="" id="19" />
               <Output name="error8r" type="1" type_size="1" nature="2" inner="0" tooltip="" id="20" />
+              <Output name="error9" type="1" type_size="1" nature="2" inner="0" tooltip="" id="21" />
+              <Output name="error10" type="1" type_size="1" nature="2" inner="0" tooltip="" id="22" />
+              <Output name="error9r" type="1" type_size="1" nature="2" inner="0" tooltip="" id="23" />
+              <Output name="error10r" type="1" type_size="1" nature="2" inner="0" tooltip="" id="24" />
             </Box>
             <Box name="Picture 9" id="18" localization="8" tooltip="GLI ADULATORI" x="709" y="1026">
               <bitmap>media/images/box/box-diagram.png</bitmap>
@@ -36154,7 +36158,7 @@ class MyClass(GeneratedClass):
                 </BehaviorLayer>
               </Timeline>
             </Box>
-            <Box name="Picture 10 (1)" id="22" localization="8" tooltip="GLI ADULATORI" x="716" y="1146">
+            <Box name="Picture 10" id="22" localization="8" tooltip="GLI ADULATORI" x="716" y="1146">
               <bitmap>media/images/box/box-diagram.png</bitmap>
               <script language="4">
                 <content>
@@ -44945,6 +44949,10 @@ class MyClass(GeneratedClass):
             <Link inputowner="19" indexofinput="2" outputowner="22" indexofoutput="6" />
             <Link inputowner="6" indexofinput="2" outputowner="23" indexofoutput="5" />
             <Link inputowner="6" indexofinput="2" outputowner="24" indexofoutput="5" />
+            <Link inputowner="18" indexofinput="4" outputowner="19" indexofoutput="21" />
+            <Link inputowner="22" indexofinput="4" outputowner="19" indexofoutput="22" />
+            <Link inputowner="23" indexofinput="4" outputowner="19" indexofoutput="23" />
+            <Link inputowner="24" indexofinput="4" outputowner="19" indexofoutput="24" />
           </Diagram>
         </BehaviorKeyframe>
       </BehaviorLayer>
