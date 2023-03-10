@@ -13,7 +13,7 @@
     <color name="background_gradient_start">#FF000000</color>
     <color name="background_gradient_end">#66000000</color>
     <color name="main_color">#11000000</color>
-    <color name="description_card_background">#66000000</color>
+    <color name="description_card_background">#77000000</color>
     <color name="transparent">#00000000</color>
 
     <color name="mtrl_textinput_default_box_stroke_color">@color/main_color</color>
