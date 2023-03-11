@@ -50,7 +50,7 @@
                 android:id="@+id/txt_painting_description"
                 android:text="@string/description_painting_11"
                 style="@style/PaintingDescriptionButtonTextStyle"
-                android:textColor="@color/white"/>
+                android:textColor="@color/main_color"/>
 
         </ScrollView>
 
@@ -94,7 +94,7 @@
                         android:layout_marginEnd="-20dp"
                         android:translationX="0dp"
                         android:layout_gravity="top|end"
-                        app:cardBackgroundColor="@color/white"
+                        app:cardBackgroundColor="@color/teal_200"
                         app:cardCornerRadius="20dp">
 
                         <LinearLayout
@@ -108,7 +108,7 @@
                                 android:layout_height="60dp"
                                 android:backgroundTint="@color/background_gradient_start"
                                 android:text="@string/btn_wait"
-                                android:textColor="@color/white"
+                                android:textColor="@color/main_color"
                                 android:textSize="20sp"
                                 app:cornerRadius="20dp"
                                 android:layout_marginStart="20dp"
@@ -168,10 +168,10 @@
                     android:src="@drawable/ic_location"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias=".03"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias=".45"
-                    app:layout_constraintHorizontal_bias=".03"/>
+                    app:layout_constraintVertical_bias=".45" />
 
                 <TextView
                     android:id="@+id/txt_painting_author"
