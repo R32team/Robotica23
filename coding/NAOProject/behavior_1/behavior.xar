@@ -15,7 +15,7 @@
       <BehaviorLayer name="behavior_layer1">
         <BehaviorKeyframe name="keyframe1" index="1">
           <Diagram scale="59.4604">
-            <Box name="Python server" id="1" localization="8" tooltip="A python server that communicates with the app and arduino" x="393" y="40">
+            <Box name="Python server" id="1" localization="8" tooltip="A python server that communicates with the app and arduino" x="381" y="15">
               <bitmap>media/images/box/box-python-script.png</bitmap>
               <script language="4">
                 <content>
@@ -95,6 +95,10 @@ class MyClass(GeneratedClass):
             msg = message
             self.onRecievedMessage(str(msg[1]))
             self.logger.info(str('Recieved from app:' + msg[1]))
+        elif message[2] == 'question' and message[0] == 'app':
+            msg = message
+            self.onRecievedQuestion(str(msg[1]))
+            self.logger.info(str('Recieved Question from app:' + msg[1]))
         else:
             msg = ['', '', '']
         return msg
@@ -112,8 +116,9 @@ class MyClass(GeneratedClass):
               <Input name="sendMessage" type="0" type_size="1" nature="1" inner="0" tooltip="IP of the target of the message and message to be sent with socket.&#x0A;A list needs to be passed: [name,  message]" id="4" />
               <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="5" />
               <Output name="onRecievedMessage" type="3" type_size="1" nature="2" inner="0" tooltip="It returns the message recieved as a string." id="6" />
+              <Output name="onRecievedQuestion" type="3" type_size="1" nature="2" inner="0" tooltip="" id="7" />
             </Box>
-            <Box name="Switch Case" id="2" localization="8" tooltip="Test input value and stimulate the output matching to this value. If there is no&#x0A;matching output, the default output (onDefault) is stimulated.&#x0A;&#x0A;You can edit a case by left double-clicking on the line. You can add a&#x0A;case by right clicking on a line and selecting &apos;Insert a row&apos;. You can delete&#x0A;a case by right clicking on a line and selecting &apos;Remove a row&apos;." plugin="dispatcher_plugin" x="292" y="636">
+            <Box name="Switch Case" id="2" localization="8" tooltip="Test input value and stimulate the output matching to this value. If there is no&#x0A;matching output, the default output (onDefault) is stimulated.&#x0A;&#x0A;You can edit a case by left double-clicking on the line. You can add a&#x0A;case by right clicking on a line and selecting &apos;Insert a row&apos;. You can delete&#x0A;a case by right clicking on a line and selecting &apos;Remove a row&apos;." plugin="dispatcher_plugin" x="124" y="373">
               <bitmap>media/images/box/interaction/choice.png</bitmap>
               <script language="4">
                 <content>
@@ -190,7 +195,7 @@ class MyClass(GeneratedClass):
               <Output name="output_9" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="12" />
               <Output name="output_10" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="13" />
             </Box>
-            <Box name="Picture 1" id="3" localization="8" tooltip="L&apos;ARRIVO DELLE ANIME" x="677" y="42">
+            <Box name="Picture 1" id="3" localization="8" tooltip="L&apos;ARRIVO DELLE ANIME" x="418" y="218">
               <bitmap>media/images/box/box-diagram.png</bitmap>
               <script language="4">
                 <content>
@@ -388,7 +393,7 @@ class MyClass(GeneratedClass):
               <Input name="onStart" type="1" type_size="1" nature="1" inner="0" tooltip="To send the text on the output." id="2" />
               <Output name="onStopped" type="3" type_size="1" nature="2" inner="0" tooltip="The text you entered." id="3" />
             </Box>
-            <Box name="Picture 3" id="4" localization="8" tooltip="LA SCALATA" x="683" y="241">
+            <Box name="Picture 3" id="4" localization="8" tooltip="LA SCALATA" x="424" y="417">
               <bitmap>media/images/box/box-diagram.png</bitmap>
               <script language="4">
                 <content>
@@ -564,7 +569,7 @@ class MyClass(GeneratedClass):
                 </BehaviorLayer>
               </Timeline>
             </Box>
-            <Box name="Picture 4" id="7" localization="8" tooltip="I MORTI DI MORTE VIOLENTA" x="684" y="336">
+            <Box name="Picture 4" id="7" localization="8" tooltip="I MORTI DI MORTE VIOLENTA" x="425" y="512">
               <bitmap>media/images/box/box-diagram.png</bitmap>
               <script language="4">
                 <content>
@@ -740,7 +745,7 @@ class MyClass(GeneratedClass):
                 </BehaviorLayer>
               </Timeline>
             </Box>
-            <Box name="Picture 5" id="10" localization="8" tooltip="SORDELLO E VIRGILIO" x="689" y="436">
+            <Box name="Picture 5" id="10" localization="8" tooltip="SORDELLO E VIRGILIO" x="430" y="612">
               <bitmap>media/images/box/box-diagram.png</bitmap>
               <script language="4">
                 <content>
@@ -916,7 +921,7 @@ class MyClass(GeneratedClass):
                 </BehaviorLayer>
               </Timeline>
             </Box>
-            <Box name="Picture 6" id="9" localization="8" tooltip="LA VALLETTA DEI PRINCIPI" x="691" y="537">
+            <Box name="Picture 6" id="9" localization="8" tooltip="LA VALLETTA DEI PRINCIPI" x="432" y="713">
               <bitmap>media/images/box/box-diagram.png</bitmap>
               <script language="4">
                 <content>
@@ -1092,7 +1097,7 @@ class MyClass(GeneratedClass):
                 </BehaviorLayer>
               </Timeline>
             </Box>
-            <Box name="Picture 7" id="14" localization="8" tooltip="LA CACCIATA DEL SERPENTE" x="691" y="639">
+            <Box name="Picture 7" id="14" localization="8" tooltip="LA CACCIATA DEL SERPENTE" x="432" y="815">
               <bitmap>media/images/box/box-diagram.png</bitmap>
               <script language="4">
                 <content>
@@ -1268,7 +1273,7 @@ class MyClass(GeneratedClass):
                 </BehaviorLayer>
               </Timeline>
             </Box>
-            <Box name="Picture 8" id="16" localization="8" tooltip="LA PORTA DEL PURGATORIO" x="697" y="741">
+            <Box name="Picture 8" id="16" localization="8" tooltip="LA PORTA DEL PURGATORIO" x="438" y="917">
               <bitmap>media/images/box/box-diagram.png</bitmap>
               <script language="4">
                 <content>
@@ -1444,7 +1449,7 @@ class MyClass(GeneratedClass):
                 </BehaviorLayer>
               </Timeline>
             </Box>
-            <Box name="Picture 2" id="20" localization="8" tooltip="MANFREDI" x="682" y="144">
+            <Box name="Picture 2" id="20" localization="8" tooltip="MANFREDI" x="423" y="320">
               <bitmap>media/images/box/box-diagram.png</bitmap>
               <script language="4">
                 <content>
@@ -1620,7 +1625,7 @@ class MyClass(GeneratedClass):
                 </BehaviorLayer>
               </Timeline>
             </Box>
-            <Box name="Picture 9" id="18" localization="8" tooltip="I BASSORILIEVI" x="701" y="838">
+            <Box name="Picture 9" id="18" localization="8" tooltip="I BASSORILIEVI" x="442" y="1014">
               <bitmap>media/images/box/box-diagram.png</bitmap>
               <script language="4">
                 <content>
@@ -1796,7 +1801,7 @@ class MyClass(GeneratedClass):
                 </BehaviorLayer>
               </Timeline>
             </Box>
-            <Box name="Picture 10" id="22" localization="8" tooltip="I SUPERBI" x="707" y="933">
+            <Box name="Picture 10" id="22" localization="8" tooltip="I SUPERBI" x="438" y="1114">
               <bitmap>media/images/box/box-diagram.png</bitmap>
               <script language="4">
                 <content>
@@ -1972,6 +1977,235 @@ class MyClass(GeneratedClass):
                 </BehaviorLayer>
               </Timeline>
             </Box>
+            <Box name="Switch Case (1)" id="5" localization="8" tooltip="Test input value and stimulate the output matching to this value. If there is no&#x0A;matching output, the default output (onDefault) is stimulated.&#x0A;&#x0A;You can edit a case by left double-clicking on the line. You can add a&#x0A;case by right clicking on a line and selecting &apos;Insert a row&apos;. You can delete&#x0A;a case by right clicking on a line and selecting &apos;Remove a row&apos;." plugin="dispatcher_plugin" x="722" y="374">
+              <bitmap>media/images/box/interaction/choice.png</bitmap>
+              <script language="4">
+                <content>
+                  <![CDATA[# /!\ Generated content. Do not edit!
+class MyClass(GeneratedClass):
+	def __init__(self):
+		try: # disable autoBind
+		  GeneratedClass.__init__(self, False)
+		except TypeError: # if NAOqi < 1.14
+		  GeneratedClass.__init__( self )
+
+	def onInput_onStart(self, p):
+		p = self.typeConversion(p)
+		if(p == self.typeConversion("1")):
+			self.output_1(p)
+		elif(p == self.typeConversion("2")):
+			self.output_2(p)
+		elif(p == self.typeConversion("3")):
+			self.output_3(p)
+		elif(p == self.typeConversion("4")):
+			self.output_4(p)
+		elif(p == self.typeConversion("5")):
+			self.output_5(p)
+		elif(p == self.typeConversion("6")):
+			self.output_6(p)
+		elif(p == self.typeConversion("7")):
+			self.output_7(p)
+		elif(p == self.typeConversion("8")):
+			self.output_8(p)
+		elif(p == self.typeConversion("9")):
+			self.output_9(p)
+		elif(p == self.typeConversion("10")):
+			self.output_10(p)
+		else:
+			self.onDefault()
+
+	def typeConversion(self, p):
+		try:
+			p = float(p)
+			pint = int(p)
+			if( p == pint ):
+				p = pint
+		except:
+			p = str(p)
+		return p]]>
+                </content>
+              </script>
+              <pluginContent>
+                <keywords>
+                  <keyword>&quot;1&quot;</keyword>
+                  <keyword>&quot;2&quot;</keyword>
+                  <keyword>&quot;3&quot;</keyword>
+                  <keyword>&quot;4&quot;</keyword>
+                  <keyword>&quot;5&quot;</keyword>
+                  <keyword>&quot;6&quot;</keyword>
+                  <keyword>&quot;7&quot;</keyword>
+                  <keyword>&quot;8&quot;</keyword>
+                  <keyword>&quot;9&quot;</keyword>
+                  <keyword>&quot;10&quot;</keyword>
+                  <keyword></keyword>
+                </keywords>
+              </pluginContent>
+              <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+              <Input name="onStart" type="0" type_size="1" nature="1" inner="0" tooltip="Value to test." id="2" />
+              <Output name="onDefault" type="1" type_size="1" nature="2" inner="0" tooltip="If the input value does not match any value set on the box." id="3" />
+              <Output name="output_1" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="4" />
+              <Output name="output_2" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="5" />
+              <Output name="output_3" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="6" />
+              <Output name="output_4" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="7" />
+              <Output name="output_5" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="8" />
+              <Output name="output_6" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="9" />
+              <Output name="output_7" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="10" />
+              <Output name="output_8" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="11" />
+              <Output name="output_9" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="12" />
+              <Output name="output_10" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="13" />
+            </Box>
+            <Box name="Text Edit (1)" id="11" localization="8" tooltip="Send the text you entered when the input is stimulated." plugin="textedit_plugin" x="711" y="138">
+              <bitmap>media/images/box/interaction/vocabulary.png</bitmap>
+              <script language="4">
+                <content>
+                  <![CDATA[# /!\ Generated content. Do not edit!
+class MyClass(GeneratedClass):
+	def __init__(self):
+		GeneratedClass.__init__(self)
+
+	def onInput_onStart(self):
+		self.onStopped("stop")]]>
+                </content>
+              </script>
+              <pluginContent>
+                <text>
+                  <![CDATA[stop]]>
+                </text>
+              </pluginContent>
+              <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
+              <Input name="onStart" type="1" type_size="1" nature="1" inner="0" tooltip="To send the text on the output." id="2" />
+              <Output name="onStopped" type="3" type_size="1" nature="2" inner="0" tooltip="The text you entered." id="3" />
+            </Box>
+            <Box name="Question1" id="12" localization="8" tooltip="" x="979" y="231">
+              <dialogFile>../Question1/Question1.dlg</dialogFile>
+              <bitmap>media/images/box/box-dialog.png</bitmap>
+              <script language="4">
+                <content>
+                  <![CDATA[]]>
+                </content>
+              </script>
+              <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+              <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+              <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+              <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+            </Box>
+            <Box name="Question2" id="8" localization="8" tooltip="" x="981" y="331">
+              <dialogFile>../Question2/Question2.dlg</dialogFile>
+              <bitmap>media/images/box/box-dialog.png</bitmap>
+              <script language="4">
+                <content>
+                  <![CDATA[]]>
+                </content>
+              </script>
+              <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+              <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+              <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+              <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+            </Box>
+            <Box name="Question3" id="13" localization="8" tooltip="" x="987" y="424">
+              <dialogFile>../Question3/Question3.dlg</dialogFile>
+              <bitmap>media/images/box/box-dialog.png</bitmap>
+              <script language="4">
+                <content>
+                  <![CDATA[]]>
+                </content>
+              </script>
+              <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+              <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+              <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+              <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+            </Box>
+            <Box name="Question4" id="15" localization="8" tooltip="" x="988" y="520">
+              <dialogFile>../Question4/Question4.dlg</dialogFile>
+              <bitmap>media/images/box/box-dialog.png</bitmap>
+              <script language="4">
+                <content>
+                  <![CDATA[]]>
+                </content>
+              </script>
+              <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+              <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+              <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+              <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+            </Box>
+            <Box name="Question5" id="17" localization="8" tooltip="" x="993" y="619">
+              <dialogFile>../Question5/Question5.dlg</dialogFile>
+              <bitmap>media/images/box/box-dialog.png</bitmap>
+              <script language="4">
+                <content>
+                  <![CDATA[]]>
+                </content>
+              </script>
+              <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+              <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+              <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+              <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+            </Box>
+            <Box name="Question6" id="19" localization="8" tooltip="" x="998" y="719">
+              <dialogFile>../Question6/Question6.dlg</dialogFile>
+              <bitmap>media/images/box/box-dialog.png</bitmap>
+              <script language="4">
+                <content>
+                  <![CDATA[]]>
+                </content>
+              </script>
+              <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+              <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+              <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+              <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+            </Box>
+            <Box name="Question7" id="21" localization="8" tooltip="" x="1000" y="815">
+              <dialogFile>../Question7/Question7.dlg</dialogFile>
+              <bitmap>media/images/box/box-dialog.png</bitmap>
+              <script language="4">
+                <content>
+                  <![CDATA[]]>
+                </content>
+              </script>
+              <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+              <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+              <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+              <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+            </Box>
+            <Box name="Question8" id="23" localization="8" tooltip="" x="1008" y="910">
+              <dialogFile>../Question8/Question8.dlg</dialogFile>
+              <bitmap>media/images/box/box-dialog.png</bitmap>
+              <script language="4">
+                <content>
+                  <![CDATA[]]>
+                </content>
+              </script>
+              <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+              <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+              <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+              <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+            </Box>
+            <Box name="Question9" id="24" localization="8" tooltip="" x="1008" y="1005">
+              <dialogFile>../Question9/Question9.dlg</dialogFile>
+              <bitmap>media/images/box/box-dialog.png</bitmap>
+              <script language="4">
+                <content>
+                  <![CDATA[]]>
+                </content>
+              </script>
+              <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+              <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+              <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+              <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+            </Box>
+            <Box name="Question10" id="25" localization="8" tooltip="" x="1007" y="1103">
+              <dialogFile>../Question10/Question10.dlg</dialogFile>
+              <bitmap>media/images/box/box-dialog.png</bitmap>
+              <script language="4">
+                <content>
+                  <![CDATA[]]>
+                </content>
+              </script>
+              <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+              <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+              <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+              <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+            </Box>
             <Link inputowner="3" indexofinput="2" outputowner="2" indexofoutput="4" />
             <Link inputowner="20" indexofinput="2" outputowner="2" indexofoutput="5" />
             <Link inputowner="4" indexofinput="2" outputowner="2" indexofoutput="6" />
@@ -1994,6 +2228,28 @@ class MyClass(GeneratedClass):
             <Link inputowner="6" indexofinput="2" outputowner="16" indexofoutput="5" />
             <Link inputowner="6" indexofinput="2" outputowner="18" indexofoutput="5" />
             <Link inputowner="6" indexofinput="2" outputowner="22" indexofoutput="5" />
+            <Link inputowner="5" indexofinput="2" outputowner="1" indexofoutput="7" />
+            <Link inputowner="1" indexofinput="4" outputowner="11" indexofoutput="3" />
+            <Link inputowner="12" indexofinput="2" outputowner="5" indexofoutput="4" />
+            <Link inputowner="11" indexofinput="2" outputowner="12" indexofoutput="4" />
+            <Link inputowner="8" indexofinput="2" outputowner="5" indexofoutput="5" />
+            <Link inputowner="13" indexofinput="2" outputowner="5" indexofoutput="6" />
+            <Link inputowner="15" indexofinput="2" outputowner="5" indexofoutput="7" />
+            <Link inputowner="17" indexofinput="2" outputowner="5" indexofoutput="8" />
+            <Link inputowner="19" indexofinput="2" outputowner="5" indexofoutput="9" />
+            <Link inputowner="21" indexofinput="2" outputowner="5" indexofoutput="10" />
+            <Link inputowner="23" indexofinput="2" outputowner="5" indexofoutput="11" />
+            <Link inputowner="24" indexofinput="2" outputowner="5" indexofoutput="12" />
+            <Link inputowner="25" indexofinput="2" outputowner="5" indexofoutput="13" />
+            <Link inputowner="11" indexofinput="2" outputowner="8" indexofoutput="4" />
+            <Link inputowner="11" indexofinput="2" outputowner="13" indexofoutput="4" />
+            <Link inputowner="11" indexofinput="2" outputowner="15" indexofoutput="4" />
+            <Link inputowner="11" indexofinput="2" outputowner="17" indexofoutput="4" />
+            <Link inputowner="11" indexofinput="2" outputowner="19" indexofoutput="4" />
+            <Link inputowner="11" indexofinput="2" outputowner="21" indexofoutput="4" />
+            <Link inputowner="11" indexofinput="2" outputowner="23" indexofoutput="4" />
+            <Link inputowner="11" indexofinput="2" outputowner="24" indexofoutput="4" />
+            <Link inputowner="11" indexofinput="2" outputowner="25" indexofoutput="4" />
           </Diagram>
         </BehaviorKeyframe>
       </BehaviorLayer>
