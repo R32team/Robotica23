@@ -8,12 +8,13 @@
     <color name="black">#FF544B44</color>
     <color name="white">#FFFFFFFF</color>
     <color name="grey">#FFAAAAAA</color>
+    <color name="ash_grey">#AEB4A9</color>
 
     <!--Custom colors-->
     <color name="background_gradient_start">#37515F</color>
-    <color name="background_gradient_end">#6637515F</color>
+    <color name="background_gradient_end">#8837515F</color>
     <color name="main_color">#FFFFFFFF</color>
-    <color name="description_card_background">#FFD5573B</color>
+    <color name="description_card_background">#22AEB4A9</color>
     <color name="button_background">#FFD5573B</color>
     <color name="transparent">#FFFFFFFF</color>
 
