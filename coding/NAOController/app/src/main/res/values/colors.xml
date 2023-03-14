@@ -10,10 +10,10 @@
     <color name="grey">#FFAAAAAA</color>
 
     <!--Custom colors-->
-    <color name="background_gradient_start">#4CAF50</color>
-    <color name="background_gradient_end">#4DDAEC</color>
+    <color name="background_gradient_start">#37515F</color>
+    <color name="background_gradient_end">#6637515F</color>
     <color name="main_color">#FFFFFFFF</color>
-    <color name="description_card_background">#664DDAEC</color>
+    <color name="description_card_background">#22AEB4A9</color>
     <color name="transparent">#FFFFFFFF</color>
 
     <color name="mtrl_textinput_default_box_stroke_color">@color/main_color</color>
