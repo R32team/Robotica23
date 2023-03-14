@@ -93,12 +93,11 @@ class MyClass(GeneratedClass):
 
         if message[2] == 'nao' and message[0] == 'app':
             msg = message
-            self.onRecievedMessage(str(msg[1]))
+            if 'quiz' in msg[1]:
+                self.onRecievedQuestion(str(msg[1]))
+            else:
+                self.onRecievedMessage(str(msg[1]))
             self.logger.info(str('Recieved from app:' + msg[1]))
-        elif message[2] == 'question' and message[0] == 'app':
-            msg = message
-            self.onRecievedQuestion(str(msg[1]))
-            self.logger.info(str('Recieved Question from app:' + msg[1]))
         else:
             msg = ['', '', '']
         return msg
@@ -1991,25 +1990,25 @@ class MyClass(GeneratedClass):
 
 	def onInput_onStart(self, p):
 		p = self.typeConversion(p)
-		if(p == self.typeConversion("1")):
+		if(p == self.typeConversion("Quiz1")):
 			self.output_1(p)
-		elif(p == self.typeConversion("2")):
+		elif(p == self.typeConversion("Quiz2")):
 			self.output_2(p)
-		elif(p == self.typeConversion("3")):
+		elif(p == self.typeConversion("Quiz3")):
 			self.output_3(p)
-		elif(p == self.typeConversion("4")):
+		elif(p == self.typeConversion("Quiz4")):
 			self.output_4(p)
-		elif(p == self.typeConversion("5")):
+		elif(p == self.typeConversion("Quiz5")):
 			self.output_5(p)
-		elif(p == self.typeConversion("6")):
+		elif(p == self.typeConversion("Quiz6")):
 			self.output_6(p)
-		elif(p == self.typeConversion("7")):
+		elif(p == self.typeConversion("Quiz7")):
 			self.output_7(p)
-		elif(p == self.typeConversion("8")):
+		elif(p == self.typeConversion("Quiz8")):
 			self.output_8(p)
-		elif(p == self.typeConversion("9")):
+		elif(p == self.typeConversion("Quiz9")):
 			self.output_9(p)
-		elif(p == self.typeConversion("10")):
+		elif(p == self.typeConversion("Quiz10")):
 			self.output_10(p)
 		else:
 			self.onDefault()
@@ -2027,16 +2026,16 @@ class MyClass(GeneratedClass):
               </script>
               <pluginContent>
                 <keywords>
-                  <keyword>&quot;1&quot;</keyword>
-                  <keyword>&quot;2&quot;</keyword>
-                  <keyword>&quot;3&quot;</keyword>
-                  <keyword>&quot;4&quot;</keyword>
-                  <keyword>&quot;5&quot;</keyword>
-                  <keyword>&quot;6&quot;</keyword>
-                  <keyword>&quot;7&quot;</keyword>
-                  <keyword>&quot;8&quot;</keyword>
-                  <keyword>&quot;9&quot;</keyword>
-                  <keyword>&quot;10&quot;</keyword>
+                  <keyword>&quot;Quiz1&quot;</keyword>
+                  <keyword>&quot;Quiz2&quot;</keyword>
+                  <keyword>&quot;Quiz3&quot;</keyword>
+                  <keyword>&quot;Quiz4&quot;</keyword>
+                  <keyword>&quot;Quiz5&quot;</keyword>
+                  <keyword>&quot;Quiz6&quot;</keyword>
+                  <keyword>&quot;Quiz7&quot;</keyword>
+                  <keyword>&quot;Quiz8&quot;</keyword>
+                  <keyword>&quot;Quiz9&quot;</keyword>
+                  <keyword>&quot;Quiz10&quot;</keyword>
                   <keyword></keyword>
                 </keywords>
               </pluginContent>

@@ -11,3 +11,6 @@ language: iti
 #u:(~hello) ~hello
 
 u:(Ciao [NAO robot]) Ciao, sono pronto a rispondere alle tue domande.
+u:(Chi e' Sordello?) Un poeta mantovano $onStopped=1
+
+

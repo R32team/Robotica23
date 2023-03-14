@@ -11,4 +11,5 @@ language: iti
 #u:(~hello) ~hello
 
 u:(Ciao [NAO robot]) Ciao, sono pronto a rispondere alle tue domande.
-u:(Cosa ha scritto dante?) La Divina Commedia $onStopped=1
+u:(Chi incontrano Dante e Virgilio?) Casella
+u:(Cosa cantano le anime quando viaggiano sulla barca?) Salmo 113 $onStopped=1

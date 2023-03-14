@@ -11,3 +11,5 @@ language: iti
 #u:(~hello) ~hello
 
 u:(Ciao [NAO robot]) Ciao, sono pronto a rispondere alle tue domande.
+u:(Questo quadro a chi è dedicato?) Ai superbi 
+u:(Come descrive Dante il percorso dell’umilta'?) Arduo, aspro, difficile $onStopped=1

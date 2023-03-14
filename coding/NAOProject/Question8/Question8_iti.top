@@ -11,3 +11,4 @@ language: iti
 #u:(~hello) ~hello
 
 u:(Ciao [NAO robot]) Ciao, sono pronto a rispondere alle tue domande.
+u:(Il quadro la porta del purgatorio si ispira a quale frase?) Vidi una porta, tre gradi di sotto per gire ad essa, di color diversi,e un portier ch’ancor non facea motto. $onStopped=1

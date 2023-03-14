@@ -11,3 +11,6 @@ language: iti
 #u:(~hello) ~hello
 
 u:(Ciao [NAO robot]) Ciao, sono pronto a rispondere alle tue domande.
+u:(Chi arriva a guardia del luogo?) Degli angeli
+u:(Che cosa mette in fuga i guardiani?) Il serpente tentatore $onStopped=1
+

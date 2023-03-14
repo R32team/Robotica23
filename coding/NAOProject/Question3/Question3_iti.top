@@ -11,3 +11,5 @@ language: iti
 #u:(~hello) ~hello
 
 u:(Ciao [NAO robot]) Ciao, sono pronto a rispondere alle tue domande.
+u:(Perche' Dante sembra essere preocucpato?) E’ preoccupato per l’altezza
+u:(In questo canto e' presente una legge di vita che Dante fa capire. Di cosa si tratta?) Ogni cammino nuovo impone una fatica grave $onStopped=1
