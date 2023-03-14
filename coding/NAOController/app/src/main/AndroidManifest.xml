@@ -22,11 +22,11 @@
         <meta-data android:name="com.google.ar.core" android:value="optional" />
 
         <activity
-            android:name=".NaoButtons"
+            android:name="com.r32.naocontroller.NaoButtons"
             android:screenOrientation="landscape"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.r32.naocontroller.MainActivity"
             android:screenOrientation="landscape"
             android:exported="true">
             <intent-filter>
@@ -37,12 +37,12 @@
         </activity>
 
         <activity
-            android:name=".NaoDescription"
+            android:name="com.r32.naocontroller.NaoDescription"
             android:screenOrientation="landscape"
             android:exported="false"/>
 
         <activity
-            android:name=".ArNaoDescription"
+            android:name="com.r32.naocontroller.ArNaoDescription"
             android:screenOrientation="landscape"
             android:exported="false"/>
     </application>

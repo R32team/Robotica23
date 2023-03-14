@@ -7,7 +7,7 @@ android {
     buildToolsVersion "32.0.0"
 
     defaultConfig {
-        applicationId "com.example.naocontroller"
+        applicationId "com.r32.naocontroller"
         minSdkVersion 25
         targetSdkVersion 31
         versionCode 1
@@ -27,7 +27,7 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    namespace 'com.example.naocontroller'
+    namespace 'com.r32.naocontroller'
 }
 
 dependencies {

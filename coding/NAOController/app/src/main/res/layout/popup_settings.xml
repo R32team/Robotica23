@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="500dp"
     android:layout_height="wrap_content"
-    tools:context=".NaoButtons"
+    tools:context="com.r32.naocontroller.NaoButtons"
     android:orientation="vertical"
     android:maxWidth="500dp">
 

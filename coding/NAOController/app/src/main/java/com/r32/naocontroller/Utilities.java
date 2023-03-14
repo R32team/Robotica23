@@ -1,4 +1,4 @@
-package com.example.naocontroller;
+package com.r32.naocontroller;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -148,7 +148,6 @@ public class Utilities {
 
     static private SpannableStringBuilder getDetailsString(int paintingIndex, Resources resources) {
         String string;
-        SpannableStringBuilder formattedString;
         int redColor = resources.getColor(R.color.main_color);
         int whiteColor = resources.getColor(R.color.white);
 

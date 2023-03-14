@@ -1,4 +1,4 @@
-package com.example.naocontroller;
+package com.r32.naocontroller;
 
 import android.animation.ObjectAnimator;
 import android.app.Dialog;
@@ -7,7 +7,6 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
-import android.view.Window;
 import android.view.WindowManager;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.Button;
@@ -16,9 +15,9 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
-import com.example.naocontroller.ar.helpers.CameraPermissionHelper;
-import com.example.naocontroller.ar.helpers.SnackbarHelper;
-import com.example.naocontroller.socket.MessageSender;
+import com.r32.naocontroller.ar.helpers.CameraPermissionHelper;
+import com.r32.naocontroller.ar.helpers.SnackbarHelper;
+import com.r32.naocontroller.socket.MessageSender;
 import com.google.android.material.textfield.TextInputEditText;
 
 import java.util.Objects;

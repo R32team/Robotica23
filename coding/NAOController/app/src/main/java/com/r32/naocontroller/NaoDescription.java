@@ -1,12 +1,11 @@
-package com.example.naocontroller;
+package com.r32.naocontroller;
 
-import android.animation.ObjectAnimator;
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.view.animation.AccelerateDecelerateInterpolator;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -14,8 +13,8 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
-import com.example.naocontroller.socket.MessageReceiver;
-import com.example.naocontroller.socket.MessageSender;
+import com.r32.naocontroller.socket.MessageReceiver;
+import com.r32.naocontroller.socket.MessageSender;
 
 import java.util.Objects;
 
@@ -27,7 +26,7 @@ public class NaoDescription extends AppCompatActivity {
 
     private ImageView paintingView;
 
-    private Button quizButton;
+    private CardView quizButton;
 
     private int paintingIndex;
     private String port;
@@ -68,6 +67,18 @@ public class NaoDescription extends AppCompatActivity {
         quizButton.setOnClickListener(v -> {
             MessageSender sender = new MessageSender();
             sender.execute("app_quiz" + paintingIndex + "_nao", ip, port);
+
+            quizButton.animate()
+                    .setDuration(200)
+                    .translationX(200)
+                    .setListener(
+                    new AnimatorListenerAdapter() {
+                @Override
+                public void onAnimationEnd(Animator animation) {
+                    super.onAnimationEnd(animation);
+                    quizButton.setVisibility(View.GONE);
+                }
+            });
         });
     }
 

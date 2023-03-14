@@ -1,4 +1,4 @@
-package com.example.naocontroller.ar.helpers;
+package com.r32.naocontroller.ar.helpers;
 
 import android.Manifest;
 import android.app.Activity;

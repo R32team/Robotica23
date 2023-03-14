@@ -1,4 +1,4 @@
-package com.example.naocontroller;
+package com.r32.naocontroller;
 
 public class StatsManager {
     private final static String TAG = StatsManager.class.getSimpleName();

@@ -1,4 +1,4 @@
-package com.example.naocontroller.ar.rendering;
+package com.r32.naocontroller.ar.rendering;
 
 import android.content.Context;
 import android.opengl.GLES20;

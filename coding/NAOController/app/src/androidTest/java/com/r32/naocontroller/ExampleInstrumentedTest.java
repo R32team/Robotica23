@@ -1,4 +1,4 @@
-package com.example.naocontroller;
+package com.r32.naocontroller;
 
 import android.content.Context;
 

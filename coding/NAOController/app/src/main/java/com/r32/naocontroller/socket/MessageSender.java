@@ -1,4 +1,4 @@
-package com.example.naocontroller.socket;
+package com.r32.naocontroller.socket;
 
 import android.os.AsyncTask;
 import java.io.PrintWriter;

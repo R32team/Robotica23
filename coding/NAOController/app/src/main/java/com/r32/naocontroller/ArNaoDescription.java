@@ -1,5 +1,7 @@
-package com.example.naocontroller;
+package com.r32.naocontroller;
 
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
 import android.animation.ObjectAnimator;
 import android.content.Intent;
 import android.graphics.Color;
@@ -12,7 +14,6 @@ import android.util.Log;
 import android.util.Pair;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
-import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,17 +22,17 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
-import com.example.naocontroller.ar.helpers.CameraPermissionHelper;
-import com.example.naocontroller.ar.helpers.DisplayRotationHelper;
-import com.example.naocontroller.ar.helpers.FullScreenHelper;
-import com.example.naocontroller.ar.helpers.SnackbarHelper;
+import com.r32.naocontroller.ar.helpers.CameraPermissionHelper;
+import com.r32.naocontroller.ar.helpers.DisplayRotationHelper;
+import com.r32.naocontroller.ar.helpers.FullScreenHelper;
+import com.r32.naocontroller.ar.helpers.SnackbarHelper;
 
-import com.example.naocontroller.ar.helpers.TrackingStateHelper;
-import com.example.naocontroller.ar.rendering.AugmentedImageRenderer;
-import com.example.naocontroller.ar.rendering.BackgroundRenderer;
+import com.r32.naocontroller.ar.helpers.TrackingStateHelper;
+import com.r32.naocontroller.ar.rendering.AugmentedImageRenderer;
+import com.r32.naocontroller.ar.rendering.BackgroundRenderer;
 
-import com.example.naocontroller.socket.MessageReceiver;
-import com.example.naocontroller.socket.MessageSender;
+import com.r32.naocontroller.socket.MessageReceiver;
+import com.r32.naocontroller.socket.MessageSender;
 import com.google.ar.core.Anchor;
 import com.google.ar.core.ArCoreApk;
 import com.google.ar.core.AugmentedImage;
@@ -74,7 +75,7 @@ public class ArNaoDescription extends AppCompatActivity implements GLSurfaceView
     private CardView paintingRecognisedCard;
     private TextView paintingRecognisedTitle, paintingRecognisedLocation;
 
-    private Button quizButton;
+    private CardView quizButton;
 
     private ObjectAnimator cardSlideUpAnimation,
             cardSlideDownAnimation;
@@ -146,6 +147,18 @@ public class ArNaoDescription extends AppCompatActivity implements GLSurfaceView
         quizButton.setOnClickListener(v -> {
             MessageSender sender = new MessageSender();
             sender.execute("app_quiz" + paintingIndex + "_nao", ip, port);
+
+            quizButton.animate()
+                    .setDuration(200)
+                    .translationX(200)
+                    .setListener(
+                            new AnimatorListenerAdapter() {
+                                @Override
+                                public void onAnimationEnd(Animator animation) {
+                                    super.onAnimationEnd(animation);
+                                    quizButton.setVisibility(View.GONE);
+                                }
+                            });
         });
 
         speakButton.setOnClickListener(v -> {
