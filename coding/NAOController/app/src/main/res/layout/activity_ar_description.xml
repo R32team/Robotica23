@@ -5,48 +5,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/painting_actions_card"
-        android:visibility="visible"
-        android:layout_width="wrap_content"
-        android:layout_height="80dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:translationX="0dp"
+        android:id="@+id/btn_quiz"
+        style="@style/IconButtonStyle"
         android:layout_gravity="top|end"
-        app:cardBackgroundColor="@color/white"
-        app:cardCornerRadius="20dp">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal">
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn_wait"
-                android:layout_width="120dp"
-                android:layout_height="60dp"
-                android:backgroundTint="@color/background_gradient_start"
-                android:text="@string/btn_wait"
-                android:textColor="@color/white"
-                android:textSize="20sp"
-                app:cornerRadius="20dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginVertical="10dp"/>
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn_follow"
-                android:layout_width="120dp"
-                android:layout_height="60dp"
-                android:backgroundTint="@color/main_color"
-                android:text="@string/btn_follow"
-                android:textColor="@color/white"
-                android:textSize="20sp"
-                app:cornerRadius="20dp"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginVertical="10dp"/>
-
-        </LinearLayout>
-
+        android:layout_margin="20dp">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/btn_quiz"
+            android:src="@drawable/ic_quiz"
+            android:layout_gravity="center"/>
     </androidx.cardview.widget.CardView>
 
     <android.opengl.GLSurfaceView
@@ -84,7 +52,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="@style/TitleTextStyle"
-                    android:text="@string/title_painting_11"
+                    android:text="@string/title_painting_1"
                     android:textColor="@color/main_color"/>
 
                 <TextView
@@ -92,7 +60,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="@style/TextStyle"
-                    android:text="@string/location_painting_11"
+                    android:text="@string/location_painting_1"
                     android:textColor="@color/background_gradient_end"
                     android:layout_weight="6"/>
 

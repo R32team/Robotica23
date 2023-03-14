@@ -71,14 +71,13 @@ public class ArNaoDescription extends AppCompatActivity implements GLSurfaceView
     private boolean recognisePainting;
     private int paintingIndex;
 
-    private CardView paintingRecognisedCard, paintingActionsCard, speakButton;
+    private CardView paintingRecognisedCard;
     private TextView paintingRecognisedTitle, paintingRecognisedLocation;
 
-    private Button followButton, waitButton;
+    private Button quizButton;
 
     private ObjectAnimator cardSlideUpAnimation,
-            cardSlideDownAnimation,
-            cardPaintingActionsSlideOutAnimation;
+            cardSlideDownAnimation;
 
     // AR
 
@@ -105,12 +104,14 @@ public class ArNaoDescription extends AppCompatActivity implements GLSurfaceView
         setContentView(R.layout.activity_ar_description);
         Bundle b = getIntent().getExtras();
         recognisePainting = b.getBoolean("recognisePainting");
+
         port = b.getString("port");
         ip = b.getString("ip");
 
         if (!recognisePainting) {
             paintingIndex = b.getInt("painting");
         }
+
         setup();
     }
 
@@ -136,12 +137,16 @@ public class ArNaoDescription extends AppCompatActivity implements GLSurfaceView
         //ACTION BAR CUSTOMISATION\\
 
         surfaceView = findViewById(R.id.surface_view);
-        speakButton = findViewById(R.id.btn_speak);
-        paintingRecognisedCard = findViewById(R.id.painting_recognised_card);
-        paintingActionsCard = findViewById(R.id.painting_actions_card);
 
-        waitButton = findViewById(R.id.btn_wait);
-        followButton = findViewById(R.id.btn_follow);
+        CardView speakButton = findViewById(R.id.btn_speak);
+        paintingRecognisedCard = findViewById(R.id.painting_recognised_card);
+
+        quizButton = findViewById(R.id.btn_quiz);
+
+        quizButton.setOnClickListener(v -> {
+            MessageSender sender = new MessageSender();
+            sender.execute("app_quiz" + paintingIndex + "_nao", ip, port);
+        });
 
         speakButton.setOnClickListener(v -> {
             if (paintingRecognisedCard.getTranslationY() == 0 && recognisePainting) {
@@ -161,35 +166,17 @@ public class ArNaoDescription extends AppCompatActivity implements GLSurfaceView
             }
         });
 
-        if (recognisePainting) {
-            followButton.setVisibility(View.GONE);
-            waitButton.setVisibility(View.GONE);
-        } else {
-            followButton.setVisibility(View.VISIBLE);
-            waitButton.setVisibility(View.VISIBLE);
-
-            followButton.setOnClickListener(view -> new MessageSender().execute("app_error_nao", ip, port));
-
-            waitButton.setOnClickListener(view -> {
-                cardPaintingActionsSlideOutAnimation.start();
-                messageReceiver();
-            });
-        }
-
         cardSlideUpAnimation = ObjectAnimator.ofFloat(paintingRecognisedCard, "translationY", 0f);
         cardSlideDownAnimation = ObjectAnimator.ofFloat(paintingRecognisedCard, "translationY", Utilities.getDP(this, 140));
-        cardPaintingActionsSlideOutAnimation = ObjectAnimator.ofFloat(paintingActionsCard, "translationX", Utilities.getDP(this, 320));
 
         paintingRecognisedLocation = findViewById(R.id.painting_recognised_location_text);
         paintingRecognisedTitle = findViewById(R.id.painting_recognised_title_text);
 
         cardSlideDownAnimation.setDuration(200);
         cardSlideUpAnimation.setDuration(200);
-        cardPaintingActionsSlideOutAnimation.setDuration(200);
 
         cardSlideDownAnimation.setInterpolator(new AccelerateDecelerateInterpolator());
         cardSlideUpAnimation.setInterpolator(new AccelerateDecelerateInterpolator());
-        cardPaintingActionsSlideOutAnimation.setInterpolator(new AccelerateDecelerateInterpolator());
     }
 
     @Override

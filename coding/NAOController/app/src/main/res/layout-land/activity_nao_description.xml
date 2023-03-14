@@ -48,7 +48,7 @@
 
             <TextView
                 android:id="@+id/txt_painting_description"
-                android:text="@string/description_painting_11"
+                android:text="@string/description_painting_1"
                 style="@style/PaintingDescriptionButtonTextStyle"
                 android:textColor="@color/main_color"/>
 
@@ -85,59 +85,26 @@
                 android:layout_height="0dp"
                 android:layout_weight="2">
 
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/painting_actions_card"
-                        android:visibility="visible"
-                        android:layout_width="wrap_content"
-                        android:layout_height="80dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginEnd="-20dp"
-                        android:translationX="0dp"
-                        android:layout_gravity="top|end"
-                        app:cardBackgroundColor="@color/teal_200"
-                        app:cardCornerRadius="20dp">
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal">
-
-                            <com.google.android.material.button.MaterialButton
-                                android:id="@+id/btn_wait"
-                                android:layout_width="120dp"
-                                android:layout_height="60dp"
-                                android:backgroundTint="@color/background_gradient_start"
-                                android:text="@string/btn_wait"
-                                android:textColor="@color/main_color"
-                                android:textSize="20sp"
-                                app:cornerRadius="20dp"
-                                android:layout_marginStart="20dp"
-                                android:layout_marginVertical="10dp"/>
-
-                            <com.google.android.material.button.MaterialButton
-                                android:id="@+id/btn_follow"
-                                android:layout_width="120dp"
-                                android:layout_height="60dp"
-                                android:backgroundTint="@color/main_color"
-                                android:text="@string/btn_follow"
-                                android:textColor="@color/white"
-                                android:textSize="20sp"
-                                app:cornerRadius="20dp"
-                                android:layout_marginStart="20dp"
-                                android:layout_marginEnd="40dp"
-                                android:layout_marginVertical="10dp"/>
-
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btn_quiz"
+                    style="@style/IconButtonStyle"
+                    android:layout_gravity="top|end"
+                    android:layout_margin="10dp">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:contentDescription="@string/btn_quiz"
+                        android:src="@drawable/ic_quiz"
+                        android:layout_gravity="center"/>
+                </androidx.cardview.widget.CardView>
 
                     <ImageView
                         android:id="@+id/painting_image"
                         android:layout_width="480dp"
                         android:layout_height="match_parent"
-                        android:contentDescription="@string/title_painting_11"
+                        android:contentDescription="@string/title_painting_1"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/painting_11"/>
+                        android:src="@drawable/painting_1"/>
 
             </FrameLayout>
 
@@ -152,7 +119,7 @@
 
                 <TextView
                     android:id="@+id/txt_painting_title"
-                    android:text="@string/title_painting_11"
+                    android:text="@string/title_painting_1"
                     style="@style/TitleTextStyle"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -164,7 +131,7 @@
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:contentDescription="@string/title_painting_11"
+                    android:contentDescription="@string/title_painting_1"
                     android:src="@drawable/ic_location"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -175,7 +142,7 @@
 
                 <TextView
                     android:id="@+id/txt_painting_author"
-                    android:text="@string/location_painting_12"
+                    android:text="@string/location_painting_2"
                     style="@style/TextStyle"
                     android:layout_width="420dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -200,7 +167,7 @@
 
                 <TextView
                     android:id="@+id/txt_painting_song"
-                    android:text="@string/song_painting_11"
+                    android:text="@string/song_painting_1"
                     style="@style/TextStyle"
                     android:layout_width="420dp"
                     app:layout_constraintBottom_toBottomOf="parent"

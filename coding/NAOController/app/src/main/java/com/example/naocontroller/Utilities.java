@@ -22,36 +22,44 @@ public class Utilities {
     static public void setTexts(int paintingIndex, TextView titleText, TextView locationText) {
         switch (paintingIndex) {
             case 1:
-                titleText.setText(R.string.title_painting_11);
-                locationText.setText(R.string.location_painting_11);
+                titleText.setText(R.string.title_painting_1);
+                locationText.setText(R.string.location_painting_1);
                 break;
             case 2:
-                titleText.setText(R.string.title_painting_12);
-                locationText.setText(R.string.location_painting_12);
+                titleText.setText(R.string.title_painting_2);
+                locationText.setText(R.string.location_painting_2);
                 break;
             case 3:
-                titleText.setText(R.string.title_painting_13);
-                locationText.setText(R.string.location_painting_13);
+                titleText.setText(R.string.title_painting_3);
+                locationText.setText(R.string.location_painting_3);
                 break;
             case 4:
-                titleText.setText(R.string.title_painting_14);
-                locationText.setText(R.string.location_painting_14);
+                titleText.setText(R.string.title_painting_4);
+                locationText.setText(R.string.location_painting_4);
                 break;
             case 5:
-                titleText.setText(R.string.title_painting_15);
-                locationText.setText(R.string.location_painting_15);
+                titleText.setText(R.string.title_painting_5);
+                locationText.setText(R.string.location_painting_5);
                 break;
             case 6:
-                titleText.setText(R.string.title_painting_16);
-                locationText.setText(R.string.location_painting_16);
+                titleText.setText(R.string.title_painting_6);
+                locationText.setText(R.string.location_painting_6);
                 break;
             case 7:
-                titleText.setText(R.string.title_painting_17);
-                locationText.setText(R.string.location_painting_17);
+                titleText.setText(R.string.title_painting_7);
+                locationText.setText(R.string.location_painting_7);
                 break;
             case 8:
-                titleText.setText(R.string.title_painting_18);
-                locationText.setText(R.string.location_painting_18);
+                titleText.setText(R.string.title_painting_8);
+                locationText.setText(R.string.location_painting_8);
+                break;
+            case 9:
+                titleText.setText(R.string.title_painting_9);
+                locationText.setText(R.string.location_painting_9);
+                break;
+            case 10:
+                titleText.setText(R.string.title_painting_10);
+                locationText.setText(R.string.location_painting_10);
                 break;
         }
     }
@@ -66,60 +74,74 @@ public class Utilities {
             ImageView paintingView) {
         switch (paintingIndex) {
             case 1:
-                titleText.setText(R.string.title_painting_11);
-                authorText.setText(R.string.location_painting_11);
-                songText.setText(R.string.song_painting_11);
+                titleText.setText(R.string.title_painting_1);
+                authorText.setText(R.string.location_painting_1);
+                songText.setText(R.string.song_painting_1);
                 descriptionText.setText(getDetailsString(paintingIndex, resources));
-                paintingView.setImageResource(R.drawable.painting_11);
+                paintingView.setImageResource(R.drawable.painting_1);
                 break;
             case 2:
-                titleText.setText(R.string.title_painting_12);
-                authorText.setText(R.string.location_painting_12);
-                songText.setText(R.string.song_painting_12);
+                titleText.setText(R.string.title_painting_2);
+                authorText.setText(R.string.location_painting_2);
+                songText.setText(R.string.song_painting_2);
                 descriptionText.setText(getDetailsString(paintingIndex, resources));
-                paintingView.setImageResource(R.drawable.painting_12);
+                paintingView.setImageResource(R.drawable.painting_2);
                 break;
             case 3:
-                titleText.setText(R.string.title_painting_13);
-                authorText.setText(R.string.location_painting_13);
-                songText.setText(R.string.song_painting_13);
+                titleText.setText(R.string.title_painting_3);
+                authorText.setText(R.string.location_painting_3);
+                songText.setText(R.string.song_painting_3);
                 descriptionText.setText(getDetailsString(paintingIndex, resources));
-                paintingView.setImageResource(R.drawable.painting_13);
+                paintingView.setImageResource(R.drawable.painting_3);
                 break;
             case 4:
-                titleText.setText(R.string.title_painting_14);
-                authorText.setText(R.string.location_painting_14);
-                songText.setText(R.string.song_painting_14);
+                titleText.setText(R.string.title_painting_4);
+                authorText.setText(R.string.location_painting_4);
+                songText.setText(R.string.song_painting_4);
                 descriptionText.setText(getDetailsString(paintingIndex, resources));
-                paintingView.setImageResource(R.drawable.painting_14);
+                paintingView.setImageResource(R.drawable.painting_4);
                 break;
             case 5:
-                titleText.setText(R.string.title_painting_15);
-                authorText.setText(R.string.location_painting_15);
-                songText.setText(R.string.song_painting_15);
+                titleText.setText(R.string.title_painting_5);
+                authorText.setText(R.string.location_painting_5);
+                songText.setText(R.string.song_painting_5);
                 descriptionText.setText(getDetailsString(paintingIndex, resources));
-                paintingView.setImageResource(R.drawable.painting_15);
+                paintingView.setImageResource(R.drawable.painting_5);
                 break;
             case 6:
-                titleText.setText(R.string.title_painting_16);
-                authorText.setText(R.string.location_painting_16);
-                songText.setText(R.string.song_painting_16);
+                titleText.setText(R.string.title_painting_6);
+                authorText.setText(R.string.location_painting_6);
+                songText.setText(R.string.song_painting_6);
                 descriptionText.setText(getDetailsString(paintingIndex, resources));
-                paintingView.setImageResource(R.drawable.painting_16);
+                paintingView.setImageResource(R.drawable.painting_6);
                 break;
             case 7:
-                titleText.setText(R.string.title_painting_17);
-                authorText.setText(R.string.location_painting_17);
-                songText.setText(R.string.song_painting_17);
+                titleText.setText(R.string.title_painting_7);
+                authorText.setText(R.string.location_painting_7);
+                songText.setText(R.string.song_painting_7);
                 descriptionText.setText(getDetailsString(paintingIndex, resources));
-                paintingView.setImageResource(R.drawable.painting_17);
+                paintingView.setImageResource(R.drawable.painting_7);
                 break;
             case 8:
-                titleText.setText(R.string.title_painting_18);
-                authorText.setText(R.string.location_painting_18);
-                songText.setText(R.string.song_painting_18);
+                titleText.setText(R.string.title_painting_8);
+                authorText.setText(R.string.location_painting_8);
+                songText.setText(R.string.song_painting_8);
                 descriptionText.setText(getDetailsString(paintingIndex, resources));
-                paintingView.setImageResource(R.drawable.painting_18);
+                paintingView.setImageResource(R.drawable.painting_8);
+                break;
+            case 9:
+                titleText.setText(R.string.title_painting_9);
+                authorText.setText(R.string.location_painting_9);
+                songText.setText(R.string.song_painting_9);
+                descriptionText.setText(getDetailsString(paintingIndex, resources));
+                paintingView.setImageResource(R.drawable.painting_9);
+                break;
+            case 10:
+                titleText.setText(R.string.title_painting_10);
+                authorText.setText(R.string.location_painting_10);
+                songText.setText(R.string.song_painting_10);
+                descriptionText.setText(getDetailsString(paintingIndex, resources));
+                paintingView.setImageResource(R.drawable.painting_10);
                 break;
         }
     }
@@ -132,28 +154,34 @@ public class Utilities {
 
         switch (paintingIndex) {
             case 1:
-                string = resources.getString(R.string.description_painting_11);
+                string = resources.getString(R.string.description_painting_1);
                 return formatString(string, redColor, whiteColor);
             case 2:
-                string = resources.getString(R.string.description_painting_12);
+                string = resources.getString(R.string.description_painting_2);
                 return formatString(string, redColor, whiteColor);
             case 3:
-                string = resources.getString(R.string.description_painting_13);
+                string = resources.getString(R.string.description_painting_3);
                 return formatString(string, redColor, whiteColor);
             case 4:
-                string = resources.getString(R.string.description_painting_14);
+                string = resources.getString(R.string.description_painting_4);
                 return formatString(string, redColor, whiteColor);
             case 5:
-                string = resources.getString(R.string.description_painting_15);
+                string = resources.getString(R.string.description_painting_5);
                 return formatString(string, redColor, whiteColor);
             case 6:
-                string = resources.getString(R.string.description_painting_16);
+                string = resources.getString(R.string.description_painting_6);
                 return formatString(string, redColor, whiteColor);
             case 7:
-                string = resources.getString(R.string.description_painting_17);
+                string = resources.getString(R.string.description_painting_7);
                 return formatString(string, redColor, whiteColor);
             case 8:
-                string = resources.getString(R.string.description_painting_18);
+                string = resources.getString(R.string.description_painting_8);
+                return formatString(string, redColor, whiteColor);
+            case 9:
+                string = resources.getString(R.string.description_painting_9);
+                return formatString(string, redColor, whiteColor);
+            case 10:
+                string = resources.getString(R.string.description_painting_10);
                 return formatString(string, redColor, whiteColor);
             default:
                 return new SpannableStringBuilder();
@@ -189,22 +217,26 @@ public class Utilities {
 
     static public int getPaintingIndexFromTitle(String paintingTitle) {
         switch(paintingTitle) {
-            case "LA RUINA":
+            case "L'ARRIVO DELLE ANIME":
                 return 1;
-            case "I CENTAURI":
+            case "MANFREDI":
                 return 2;
-            case "LA SELVA DEI SUICIDI":
+            case "LA SCALATA":
                 return 3;
-            case "CAPANEO":
+            case "I MORTI DI MORTE VIOLENTA":
                 return 4;
-            case "BRUNETTO LATINI":
+            case "SORDELLO E VIRGILIO":
                 return 5;
-            case "IL POZZO DEI GIGANTI":
+            case "LA VALLETTA DEI PRINCIPI":
                 return 6;
-            case "GERIONE":
+            case "LA CACCIATA DEL SERPENTE":
                 return 7;
-            case "GLI ADULATORI":
+            case "LA PORTA DEL PURGATORIO":
                 return 8;
+            case "I BASSORILIEVI":
+                return 9;
+            case "I SUPERBI":
+                return 10;
             default:
                 return 0;
         }

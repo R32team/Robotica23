@@ -12,7 +12,6 @@ import java.util.Objects;
 
 
 public class MainActivity extends AppCompatActivity {
-
     private final static int DELAY = 2500;
 
     @Override

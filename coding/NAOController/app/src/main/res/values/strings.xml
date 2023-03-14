@@ -11,6 +11,7 @@
     <string name="btn_follow">SEGUI</string>
     <string name="stats">Statistiche</string>
     <string name="btn_wait">CHIUDI</string>
+    <string name="btn_quiz">QUIZ</string>
     <string name="btn_reset_stats">RESET STATISTICHE</string>
 
     <string name="ic_location">Posizione</string>
@@ -24,55 +25,55 @@
     <string name="text_recognised_paintings_stats">Dipinti riconosciuti</string>
 
     <!-- Paintings -->
-    <string name="title_painting_11">L'ARRIVO DELLE ANIME</string>
-    <string name="location_painting_11">FOCE DEL TEVERE</string>
-    <string name="song_painting_11">CANTO II</string>
-    <string name="description_painting_11">Sulla spiaggia del purgatorio. E’ l\'alba, Dante e Virgilio vedono un avvicinarsi una barca guidata da un angelo, da cui scendono alcune anime. Tra queste Dante riconosce un amico musicista, Casella, a cui chiede di cantare, e tutti si fermano ad ascoltarlo.</string>
+    <string name="title_painting_1">L'ARRIVO DELLE ANIME</string>
+    <string name="location_painting_1">FOCE DEL TEVERE</string>
+    <string name="song_painting_1">CANTO II</string>
+    <string name="description_painting_1">Sulla spiaggia del purgatorio. E’ l\'alba, Dante e Virgilio vedono un avvicinarsi una barca guidata da un angelo, da cui scendono alcune anime. Tra queste Dante riconosce un amico musicista, Casella, a cui chiede di cantare, e tutti si fermano ad ascoltarlo.</string>
 
-    <string name="title_painting_12">MANFREDI</string>
-    <string name="location_painting_12">ANTIPURAGOTRIO</string>
-    <string name="song_painting_12">CANTO III</string>
-    <string name="description_painting_12">Siamo ancora sulla spiaggia. Dante e Virgilio, arrivati alle prime pendici dell\'antipurgatorio, vedono le anime degli scomunicati, a cui chiedono indicazioni sulla strada da percorrere; dal gruppo si stacca il re di Sicilia Manfredi, figlio di Federico II, che racconta Dante la storia della propria fine.</string>
+    <string name="title_painting_2">MANFREDI</string>
+    <string name="location_painting_2">ANTIPURAGOTRIO</string>
+    <string name="song_painting_2">CANTO III</string>
+    <string name="description_painting_2">Siamo ancora sulla spiaggia. Dante e Virgilio, arrivati alle prime pendici dell\'antipurgatorio, vedono le anime degli scomunicati, a cui chiedono indicazioni sulla strada da percorrere; dal gruppo si stacca il re di Sicilia Manfredi, figlio di Federico II, che racconta Dante la storia della propria fine.</string>
 
-    <string name="title_painting_13">LA SCALATA</string>
-    <string name="location_painting_13">MONTAGNA ALTISSIMA</string>
-    <string name="song_painting_13">CANTO IV</string>
-    <string name="description_painting_13">Dante e Virgilio cominciano la durissima salita lungo la montagna, fino a raggiungere la prima cengia, dove si siedono per riprendere fiato. Dante appare preoccupato per l\'altezza della montagna e Virgilio lo rassicura: più si sale più la fatica diminuisce.</string>
+    <string name="title_painting_3">LA SCALATA</string>
+    <string name="location_painting_3">MONTAGNA ALTISSIMA</string>
+    <string name="song_painting_3">CANTO IV</string>
+    <string name="description_painting_3">Dante e Virgilio cominciano la durissima salita lungo la montagna, fino a raggiungere la prima cengia, dove si siedono per riprendere fiato. Dante appare preoccupato per l\'altezza della montagna e Virgilio lo rassicura: più si sale più la fatica diminuisce.</string>
 
-    <string name="title_painting_14">I MORTI DI MORTE VIOLENTA</string>
-    <string name="location_painting_14">ANTIPURGATORIO</string>
-    <string name="song_painting_14">CANTO V</string>
-    <string name="description_painting_14">Dante e Virgilio riprendono la salita e incontrano i morti di morte violenta, pentiti all\'ultimo momento, che chiedono a Dante di portare il loro notizie ai vivi, e lui promette di farlo. si presentano allora tre personaggi e ciascuno racconta la storia della propria morte: Jacopo del cassero, Bonconte da Montefeltro e Pia de’ Tolomei.</string>
+    <string name="title_painting_4">I MORTI DI MORTE VIOLENTA</string>
+    <string name="location_painting_4">ANTIPURGATORIO</string>
+    <string name="song_painting_4">CANTO V</string>
+    <string name="description_painting_4">Dante e Virgilio riprendono la salita e incontrano i morti di morte violenta, pentiti all\'ultimo momento, che chiedono a Dante di portare il loro notizie ai vivi, e lui promette di farlo. si presentano allora tre personaggi e ciascuno racconta la storia della propria morte: Jacopo del cassero, Bonconte da Montefeltro e Pia de’ Tolomei.</string>
 
-    <string name="title_painting_15">SORDELLO E VIRGILIO</string>
-    <string name="location_painting_15">SECONDO BALZO DEELL'ANTIPURGATORIO</string>
-    <string name="song_painting_15">CANTO VI</string>
-    <string name="description_painting_15">Dante e Virgilio proseguono lungo la costa della montagna, dove i morti di morte violenta chiedono incessantemente preghiere di intercessione. Incontrano l\'anima di sordello, poeta mantovano, che abbraccia Virgilio riconoscendolo come compatriota.</string>
+    <string name="title_painting_5">SORDELLO E VIRGILIO</string>
+    <string name="location_painting_5">SECONDO BALZO DEELL'ANTIPURGATORIO</string>
+    <string name="song_painting_5">CANTO VI</string>
+    <string name="description_painting_5">Dante e Virgilio proseguono lungo la costa della montagna, dove i morti di morte violenta chiedono incessantemente preghiere di intercessione. Incontrano l\'anima di sordello, poeta mantovano, che abbraccia Virgilio riconoscendolo come compatriota.</string>
 
-    <string name="title_painting_16">LA VALLETTA DEI PRINCIPI</string>
-    <string name="location_painting_16">PARTE INFERIORE DEL MONTE DEL PURGATORIO</string>
-    <string name="song_painting_16">CANTO VII</string>
-    <string name="description_painting_16">All\’ora del tramonto Virgilio dialoga con Sordello, parlandogli della propria condizione nel limbo; quindi, gli chiede di indicargli la strada. Sordello accompagna Dante e Virgilio, e insieme i tre giungono in una piccola valle, dove si trovano alcuni dei più grandi sovrani d\’Europa dei decenni precedenti.</string>
+    <string name="title_painting_6">LA VALLETTA DEI PRINCIPI</string>
+    <string name="location_painting_6">PARTE INFERIORE DEL MONTE DEL PURGATORIO</string>
+    <string name="song_painting_6">CANTO VII</string>
+    <string name="description_painting_6">All\’ora del tramonto Virgilio dialoga con Sordello, parlandogli della propria condizione nel limbo; quindi, gli chiede di indicargli la strada. Sordello accompagna Dante e Virgilio, e insieme i tre giungono in una piccola valle, dove si trovano alcuni dei più grandi sovrani d\’Europa dei decenni precedenti.</string>
 
-    <string name="title_painting_17">LA CACCIATA DEL SERPENTE</string>
-    <string name="location_painting_17">VALLETTA DEI PRINCIPI</string>
-    <string name="song_painting_17">CANTO VII</string>
-    <string name="description_painting_17">Al crepuscolo Dante, Virgilio e Sordello sono nella valletta dei principi dove parlano con alcune anime. Vedono poi svolgersi una scena terrificante che si ripete ogni sera: due angeli arrivano a guardia del luogo, e quando compare il serpente tentatore lo mettono in fuga.</string>
+    <string name="title_painting_7">LA CACCIATA DEL SERPENTE</string>
+    <string name="location_painting_7">VALLETTA DEI PRINCIPI</string>
+    <string name="song_painting_7">CANTO VII</string>
+    <string name="description_painting_7">Al crepuscolo Dante, Virgilio e Sordello sono nella valletta dei principi dove parlano con alcune anime. Vedono poi svolgersi una scena terrificante che si ripete ogni sera: due angeli arrivano a guardia del luogo, e quando compare il serpente tentatore lo mettono in fuga.</string>
 
-    <string name="title_painting_18">LA PORTA DEL PURGATORIO</string>
-    <string name="location_painting_18">OLTRE L'ANTIPURGATORIO</string>
-    <string name="song_painting_18">CANTO IX</string>
-    <string name="description_painting_18">Nella valletta dei principi Dante si addormenta e sogna che un’aquila scende a prenderlo e a portarlo verso il sole. Al risveglio si spaventa: Virgilio gli spiega che si trovano di fronte alla porta del purgatorio e che è stato portato lì durante il sonno da santa Lucia. C\’è un angelo, al quale Dante chiede in ginocchio di poter entrare: utilizzando una chiave d\’oro e una d\’argento, apre la porta e i due entrano.</string>
+    <string name="title_painting_8">LA PORTA DEL PURGATORIO</string>
+    <string name="location_painting_8">OLTRE L'ANTIPURGATORIO</string>
+    <string name="song_painting_8">CANTO IX</string>
+    <string name="description_painting_8">Nella valletta dei principi Dante si addormenta e sogna che un’aquila scende a prenderlo e a portarlo verso il sole. Al risveglio si spaventa: Virgilio gli spiega che si trovano di fronte alla porta del purgatorio e che è stato portato lì durante il sonno da santa Lucia. C\’è un angelo, al quale Dante chiede in ginocchio di poter entrare: utilizzando una chiave d\’oro e una d\’argento, apre la porta e i due entrano.</string>
 
-    <string name="title_painting_19">I BASSORILIEVI</string>
-    <string name="location_painting_19">RIPIANO DESERTO SOTTO IL MONTE</string>
-    <string name="song_painting_19">CANTO X</string>
-    <string name="description_painting_19">Entrati nel purgatorio vero e proprio, Dante e Virgilio cominciano una faticosa salita fino alla prima cornice, lungo la cui parete sono scolpiti dei bassorilievi di bellezza straordinaria che raffigurano l\’Annunciazione, il re biblico Davide e l\’imperatore Traiano. Quindi i due incontrano le anime dei superbi.</string>
+    <string name="title_painting_9">I BASSORILIEVI</string>
+    <string name="location_painting_9">RIPIANO DESERTO SOTTO IL MONTE</string>
+    <string name="song_painting_9">CANTO X</string>
+    <string name="description_painting_9">Entrati nel purgatorio vero e proprio, Dante e Virgilio cominciano una faticosa salita fino alla prima cornice, lungo la cui parete sono scolpiti dei bassorilievi di bellezza straordinaria che raffigurano l\’Annunciazione, il re biblico Davide e l\’imperatore Traiano. Quindi i due incontrano le anime dei superbi.</string>
 
-    <string name="title_painting_20">I SUPERBI</string>
-    <string name="location_painting_20">PRIMA CORNICE</string>
-    <string name="song_painting_20">CANTO XI</string>
-    <string name="description_painting_20">Sempre nella cornice dei superbi, i quali camminano proni recitando il Padre nostro e portando sulle spalle un macigno. Dante chiacchiera con Oderisi da Gubbio, un miniaturista all\’epoca assai famoso, e il dialogo con lui è l\’occasione per una profonda riflessione sulla fama.</string>
+    <string name="title_painting_10">I SUPERBI</string>
+    <string name="location_painting_10">PRIMA CORNICE</string>
+    <string name="song_painting_10">CANTO XI</string>
+    <string name="description_painting_10">Sempre nella cornice dei superbi, i quali camminano proni recitando il Padre nostro e portando sulle spalle un macigno. Dante chiacchiera con Oderisi da Gubbio, un miniaturista all\’epoca assai famoso, e il dialogo con lui è l\’occasione per una profonda riflessione sulla fama.</string>
 
 
 </resources>

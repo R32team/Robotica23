@@ -35,6 +35,8 @@ public class NaoButtons extends AppCompatActivity {
              painting6Button,
              painting7Button,
              painting8Button,
+             painting9Button,
+             painting10Button,
              settingsButton,
              cameraRecognitionButton;
 
@@ -69,6 +71,9 @@ public class NaoButtons extends AppCompatActivity {
         painting6Button = findViewById(R.id.btn_6);
         painting7Button = findViewById(R.id.btn_7);
         painting8Button = findViewById(R.id.btn_8);
+        painting9Button = findViewById(R.id.btn_9);
+        painting10Button = findViewById(R.id.btn_10);
+
         settingsButton = findViewById(R.id.btn_settings);
         cameraRecognitionButton = findViewById(R.id.btn_camera_recognition);
 
@@ -117,6 +122,12 @@ public class NaoButtons extends AppCompatActivity {
         painting8Button.setOnClickListener(v ->
                 dataSender("8", this.ip, this.port)
         );
+        painting9Button.setOnClickListener(v ->
+                dataSender("9", this.ip, this.port)
+        );
+        painting10Button.setOnClickListener(v ->
+                dataSender("10", this.ip, this.port)
+        );
     }
 
 
@@ -132,7 +143,6 @@ public class NaoButtons extends AppCompatActivity {
         StatsManager.increaseNormalPaintings();
 
         if (!paintingIndex.equals("error")) {
-
             Intent intent = new Intent(NaoButtons.this, NaoDescription.class);
             intent.putExtra("painting", Integer.parseInt(paintingIndex));
             intent.putExtra("port", port);

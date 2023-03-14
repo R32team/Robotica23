@@ -6,14 +6,15 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF544B44</color>
-    <color name="white">#FFC17F34</color>
+    <color name="white">#FFFFFFFF</color>
     <color name="grey">#FFAAAAAA</color>
 
     <!--Custom colors-->
     <color name="background_gradient_start">#37515F</color>
     <color name="background_gradient_end">#6637515F</color>
     <color name="main_color">#FFFFFFFF</color>
-    <color name="description_card_background">#22AEB4A9</color>
+    <color name="description_card_background">#FFD5573B</color>
+    <color name="button_background">#FFD5573B</color>
     <color name="transparent">#FFFFFFFF</color>
 
     <color name="mtrl_textinput_default_box_stroke_color">@color/main_color</color>

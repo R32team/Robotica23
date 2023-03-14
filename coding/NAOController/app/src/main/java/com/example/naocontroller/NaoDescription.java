@@ -27,11 +27,7 @@ public class NaoDescription extends AppCompatActivity {
 
     private ImageView paintingView;
 
-    private Button btnFollow, btnWait;
-
-    private CardView cardPaintingActions;
-
-    private ObjectAnimator cardPaintingActionsAnimation;
+    private Button quizButton;
 
     private int paintingIndex;
     private String port;
@@ -66,25 +62,12 @@ public class NaoDescription extends AppCompatActivity {
         songText = findViewById(R.id.txt_painting_song);
         descriptionText = findViewById(R.id.txt_painting_description);
         paintingView = findViewById(R.id.painting_image);
-        cardPaintingActions = findViewById(R.id.painting_actions_card);
 
-        cardPaintingActionsAnimation = ObjectAnimator.ofFloat(cardPaintingActions, "translationX", Utilities.getDP(this, 300));
+        quizButton = findViewById(R.id.btn_quiz);
 
-        cardPaintingActionsAnimation.setDuration(200);
-
-        cardPaintingActionsAnimation.setInterpolator(new AccelerateDecelerateInterpolator());
-
-        btnFollow = findViewById(R.id.btn_follow);
-        btnWait = findViewById(R.id.btn_wait);
-
-        btnFollow.setVisibility(View.VISIBLE);
-        btnWait.setVisibility(View.VISIBLE);
-
-        btnFollow.setOnClickListener(view -> new MessageSender().execute("app_error_nao", this.ip, this.port));
-
-        btnWait.setOnClickListener(view -> {
-            messageReceiver();
-            cardPaintingActionsAnimation.start();
+        quizButton.setOnClickListener(v -> {
+            MessageSender sender = new MessageSender();
+            sender.execute("app_quiz" + paintingIndex + "_nao", ip, port);
         });
     }
 
