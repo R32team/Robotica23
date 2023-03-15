@@ -12,7 +12,7 @@
 
     <!--Custom colors-->
     <color name="background_gradient_start">#37515F</color>
-    <color name="background_gradient_end">#8837515F</color>
+    <color name="background_gradient_end">#9937515F</color>
     <color name="main_color">#FFFFFFFF</color>
     <color name="description_card_background">#22AEB4A9</color>
     <color name="button_background">#FFD5573B</color>
