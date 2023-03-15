@@ -12,6 +12,7 @@
     <string name="stats">Statistiche</string>
     <string name="btn_wait">CHIUDI</string>
     <string name="btn_quiz">QUIZ</string>
+    <string name="btn_stats">STATISTICHE</string>
     <string name="btn_reset_stats">RESET STATISTICHE</string>
 
     <string name="ic_location">Posizione</string>
