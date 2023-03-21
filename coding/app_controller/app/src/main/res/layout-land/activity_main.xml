@@ -4,13 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/buttons_activity_background"
-    tools:context="com.r32.naocontroller.MainActivity">
+    android:background="@drawable/buttons_activity_background">
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="200dp"
-        android:src="@drawable/nao_nexus_logo_text"
+        android:src="@drawable/r32_logo"
         android:backgroundTint="@color/background_gradient_end"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
