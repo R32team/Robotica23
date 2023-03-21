@@ -4,5 +4,5 @@ server:
   port: 5000
 
 socket_server:
-  ip: "0.0.0.0" # Current machine ip
+  ip: "" # Current machine ip
   port: 5050

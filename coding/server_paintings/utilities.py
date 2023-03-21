@@ -1,9 +1,6 @@
 import time
 import yaml
 
-from datetime import datetime, timedelta
-from dateutil import parser
-
 
 def getElapsedTime(startTime):
     elapsedTime = time.time() - startTime
