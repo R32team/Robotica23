@@ -55,10 +55,7 @@ void setup() {
 
 void loop() {
   //Motori avanti
-  delay(2000);
-  Serial.println("Forward1");
   forward(motor1, motor2, 100);
-  Serial.println("Forward2");
   delay(1000);
   
 }
