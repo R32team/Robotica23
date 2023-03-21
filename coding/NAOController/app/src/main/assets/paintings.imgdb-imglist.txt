@@ -6,3 +6,5 @@ painting_15|painting_15.jpg
 painting_16|painting_16.jpg
 painting_17|painting_17.jpg
 painting_18|painting_18.jpg
+painting_19|painting_19.jpg
+painting_20|painting_20.jpg

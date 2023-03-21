@@ -37,8 +37,6 @@ public class AugmentedImageRenderer {
         imageDetailsText.createOnGlThread(context, "images/painting_11_description.png");
         break;
       case 2:
-        imageDetailsText = new QuadRenderer(1.6f, 1.2f, 0);
-
         imageLocationMap.createOnGlThread(context, "images/painting_12_location.png");
         imageDetailsText.createOnGlThread(context, "images/painting_12_description.png");
         break;
@@ -63,8 +61,16 @@ public class AugmentedImageRenderer {
         imageDetailsText.createOnGlThread(context, "images/painting_17_description.png");
         break;
       case 8:
-        imageLocationMap.createOnGlThread(context, "images/painting_18_location.png");
+        imageLocationMap.createOnGlThread(context, "images/painting_14_location.png");
         imageDetailsText.createOnGlThread(context, "images/painting_18_description.png");
+        break;
+      case 9:
+        imageLocationMap.createOnGlThread(context, "images/painting_14_location.png");
+        imageDetailsText.createOnGlThread(context, "images/painting_19_description.png");
+        break;
+      case 10:
+        imageLocationMap.createOnGlThread(context, "images/painting_24_location.png");
+        imageDetailsText.createOnGlThread(context, "images/painting_20_description.png");
         break;
     }
   }
