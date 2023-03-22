@@ -2,9 +2,10 @@ from helpers.config_helper import Config
 from helpers.logging_helper import logger
 from helpers.web_browser_helper import WebBrowser
 
+import sys
 import socket
 from threading import Thread
-from typing import Callable
+from typing import List
 
 
 class SocketClient:
@@ -20,7 +21,8 @@ class SocketClient:
             message.strip()
 
             if message:
-                logger.info(f'Received message from {self.ip}: {message}')
+                logger.info(
+                    f'Received message from (IP: {self.ip}, Port: {self.port}): {self.ip}: {message}')
 
                 self.on_message(message)
 
@@ -31,12 +33,12 @@ class SocketServer:
 
     ''' Possible codes:
     * -1: NAO is moving
-    *  0: NAO is in home base 
-    * 1-10: Number of painting described 
+    *  0: NAO is in home base
+    * 1-10: Number of painting described
     '''
     status: int
 
-    clients = []
+    clients: List[SocketClient] = []
 
     s: socket.socket
 
@@ -56,24 +58,32 @@ class SocketServer:
 
         try:
             while True:
-                # Establish connection with client.
                 conn, (ip, port) = self.s.accept()
+
+                logger.info(
+                    f'New client connected (IP: {ip}, Port: {port})')
 
                 Thread(target=self.on_new_client, args=(
                     conn, ip, port), daemon=True).start()
+        except KeyboardInterrupt:
+            self.s.close()
+            sys.exit(0)
         except Exception as e:
             logger.info(str(e))
 
             self.s.close()
+            sys.exit(1)
 
     def send_to_all_clients(self, msg):
         for client in self.clients:
             client.connection.sendall(msg.encode())
 
+        logger.info(f'Sent broadcast message: {msg}')
+
     def on_new_client(self, conn, ip, port):
         client = SocketClient(conn, ip, port, self.on_received_message)
 
-        self.clients.append(conn)
+        self.clients.append(client)
 
         try:
             client.run()
@@ -90,17 +100,15 @@ class SocketServer:
 
 
 def manage_message(message):
-    global socket_status
-
     source, body, destination = message.split('_')
 
     if (source == 'app' and destination == 'arduino' and body in [str(i) for i in range(1, 11)]):
-        socket_status = -1
+        status = -1
     elif (source == 'arduino' and destination == 'nao' and body in [str(i) for i in range(1, 11)]):
-        socket_status = int(body)
+        status = int(body)
         WebBrowser.open_window(body)
     elif (source == 'nao' and destination == 'arduino'):
-        socket_status = -1
+        status = -1
         WebBrowser.close_window()
     elif (source == 'arduino' and destination == 'app'):
-        socket_status = 0
+        status = 0
