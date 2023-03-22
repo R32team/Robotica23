@@ -1,6 +1,8 @@
 import time
 import yaml
 
+from os import path
+
 
 def getElapsedTime(startTime):
     elapsedTime = time.time() - startTime
@@ -15,3 +17,10 @@ def getElapsedTime(startTime):
 def read_yaml(file_path):
     with open(file_path, 'r') as f:
         return yaml.safe_load(f)
+
+
+def get_file_path(painting):
+    painting_path = f'{path.dirname(__file__)}\..\..\social\website_purgatorio\quadri\quadro_{painting}\index.html'
+    painting_path = path.normpath(painting_path)
+
+    return painting_path

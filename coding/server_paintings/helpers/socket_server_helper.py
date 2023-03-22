@@ -1,14 +1,28 @@
-import helpers.config_helper as config_helper
+from helpers.config_helper import Config
 from helpers.logging_helper import logger
-import utilities
+from helpers.web_browser_helper import WebBrowser
 
 import socket
+from threading import Thread
+from typing import Callable
 
-import queue
 
-import threading
+class SocketClient:
+    def __init__(self, connection, ip, port, on_message):
+        self.ip = ip
+        self.connection = connection
+        self.port = port
+        self.on_message = on_message
 
-socket_status = 0
+    def run(self):
+        while True:
+            message = self.connection.recv(1024).decode("utf-8")
+            message.strip()
+
+            if message:
+                logger.info(f'Received message from {self.ip}: {message}')
+
+                self.on_message(message)
 
 
 class SocketServer:
@@ -22,13 +36,15 @@ class SocketServer:
     '''
     status: int
 
+    clients = []
+
     s: socket.socket
 
-    def __init__(self, config: config_helper.Config):
+    def __init__(self, config: Config):
         self.ip = config.socket_ip
         self.port = config.socket_port
 
-        threading.Thread(target=self.start_server, daemon=True).start()
+        self.start_server()
 
     def start_server(self):
         self.s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -38,14 +54,39 @@ class SocketServer:
 
         logger.info(f'Socket server started')
 
-        conn, _ = self.s.accept()
+        try:
+            while True:
+                # Establish connection with client.
+                conn, (ip, port) = self.s.accept()
 
-        while True:
-            message = conn.recv(1024).decode("utf-8")
-            message.strip()
-            if message:
-                logger.info(f'Received message: {message}')
-                manage_message(message)
+                Thread(target=self.on_new_client, args=(
+                    conn, ip, port), daemon=True).start()
+        except Exception as e:
+            logger.info(str(e))
+
+            self.s.close()
+
+    def send_to_all_clients(self, msg):
+        for client in self.clients:
+            client.connection.sendall(msg.encode())
+
+    def on_new_client(self, conn, ip, port):
+        client = SocketClient(conn, ip, port, self.on_received_message)
+
+        self.clients.append(conn)
+
+        try:
+            client.run()
+        except Exception as e:
+            logger.error(str(e))
+
+            client.connection.close()
+
+        self.clients.remove(client)
+
+    def on_received_message(self, message):
+        self.send_to_all_clients(message)
+        manage_message(message)
 
 
 def manage_message(message):
@@ -57,7 +98,9 @@ def manage_message(message):
         socket_status = -1
     elif (source == 'arduino' and destination == 'nao' and body in [str(i) for i in range(1, 11)]):
         socket_status = int(body)
+        WebBrowser.open_window(body)
     elif (source == 'nao' and destination == 'arduino'):
         socket_status = -1
+        WebBrowser.close_window()
     elif (source == 'arduino' and destination == 'app'):
         socket_status = 0
