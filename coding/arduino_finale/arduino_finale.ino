@@ -71,7 +71,7 @@ void loop() {
     if (data == "app_1_arduino"){
       Serial.println("Start - NaoCar");
       pinMode(STBY, OUTPUT);
-      fn_forward();
+      forward(motor1, motor2, 100);   // velocity: 255
       delay(2000);
       brake(motor1, motor2);
       pinMode(STBY, INPUT);
@@ -94,10 +94,6 @@ void loop() {
     }
   }
   delay(50);
-}
-
-void fn_forward(){
-  forward(motor1, motor2, 100); //255
 }
 
 void sendData(String data) {
