@@ -299,12 +299,12 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("home1")]]>
+		self.onStopped("nao_1_arduino")]]>
                           </content>
                         </script>
                         <pluginContent>
                           <text>
-                            <![CDATA[home1]]>
+                            <![CDATA[nao_1_arduino]]>
                           </text>
                         </pluginContent>
                         <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
@@ -497,12 +497,12 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("home3")]]>
+		self.onStopped("nao_3_arduino")]]>
                           </content>
                         </script>
                         <pluginContent>
                           <text>
-                            <![CDATA[home3]]>
+                            <![CDATA[nao_3_arduino]]>
                           </text>
                         </pluginContent>
                         <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
@@ -673,12 +673,12 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("home4")]]>
+		self.onStopped("nao_4_arduino")]]>
                           </content>
                         </script>
                         <pluginContent>
                           <text>
-                            <![CDATA[home4]]>
+                            <![CDATA[nao_4_arduino]]>
                           </text>
                         </pluginContent>
                         <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
@@ -849,12 +849,12 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("home5")]]>
+		self.onStopped("nao_5_arduino")]]>
                           </content>
                         </script>
                         <pluginContent>
                           <text>
-                            <![CDATA[home5]]>
+                            <![CDATA[nao_5_arduino]]>
                           </text>
                         </pluginContent>
                         <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
@@ -1025,12 +1025,12 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("home6")]]>
+		self.onStopped("nao_2_arduino")]]>
                           </content>
                         </script>
                         <pluginContent>
                           <text>
-                            <![CDATA[home6]]>
+                            <![CDATA[nao_2_arduino]]>
                           </text>
                         </pluginContent>
                         <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
@@ -1201,12 +1201,12 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("home7")]]>
+		self.onStopped("nao_7_arduino")]]>
                           </content>
                         </script>
                         <pluginContent>
                           <text>
-                            <![CDATA[home7]]>
+                            <![CDATA[nao_7_arduino]]>
                           </text>
                         </pluginContent>
                         <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
@@ -1377,12 +1377,12 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("home8")]]>
+		self.onStopped("nao_8_arduino")]]>
                           </content>
                         </script>
                         <pluginContent>
                           <text>
-                            <![CDATA[home8]]>
+                            <![CDATA[nao_8_arduino]]>
                           </text>
                         </pluginContent>
                         <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
@@ -1553,12 +1553,12 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("home2")]]>
+		self.onStopped("nao_2_arduino")]]>
                           </content>
                         </script>
                         <pluginContent>
                           <text>
-                            <![CDATA[home2]]>
+                            <![CDATA[nao_2_arduino]]>
                           </text>
                         </pluginContent>
                         <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
@@ -1729,12 +1729,12 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("home9")]]>
+		self.onStopped("nao_9_arduino")]]>
                           </content>
                         </script>
                         <pluginContent>
                           <text>
-                            <![CDATA[home9]]>
+                            <![CDATA[nao_9_arduino]]>
                           </text>
                         </pluginContent>
                         <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
@@ -1905,12 +1905,12 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("home10")]]>
+		self.onStopped("nao_10_arduino")]]>
                           </content>
                         </script>
                         <pluginContent>
                           <text>
-                            <![CDATA[home10]]>
+                            <![CDATA[nao_10_arduino]]>
                           </text>
                         </pluginContent>
                         <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
@@ -1990,25 +1990,25 @@ class MyClass(GeneratedClass):
 
 	def onInput_onStart(self, p):
 		p = self.typeConversion(p)
-		if(p == self.typeConversion("Quiz1")):
+		if(p == self.typeConversion("quiz1")):
 			self.output_1(p)
-		elif(p == self.typeConversion("Quiz2")):
+		elif(p == self.typeConversion("quiz2")):
 			self.output_2(p)
-		elif(p == self.typeConversion("Quiz3")):
+		elif(p == self.typeConversion("quiz3")):
 			self.output_3(p)
-		elif(p == self.typeConversion("Quiz4")):
+		elif(p == self.typeConversion("quiz4")):
 			self.output_4(p)
-		elif(p == self.typeConversion("Quiz5")):
+		elif(p == self.typeConversion("quiz5")):
 			self.output_5(p)
-		elif(p == self.typeConversion("Quiz6")):
+		elif(p == self.typeConversion("quiz6")):
 			self.output_6(p)
-		elif(p == self.typeConversion("Quiz7")):
+		elif(p == self.typeConversion("quiz7")):
 			self.output_7(p)
-		elif(p == self.typeConversion("Quiz8")):
+		elif(p == self.typeConversion("quiz8")):
 			self.output_8(p)
-		elif(p == self.typeConversion("Quiz9")):
+		elif(p == self.typeConversion("quiz9")):
 			self.output_9(p)
-		elif(p == self.typeConversion("Quiz10")):
+		elif(p == self.typeConversion("quiz10")):
 			self.output_10(p)
 		else:
 			self.onDefault()
@@ -2026,16 +2026,16 @@ class MyClass(GeneratedClass):
               </script>
               <pluginContent>
                 <keywords>
-                  <keyword>&quot;Quiz1&quot;</keyword>
-                  <keyword>&quot;Quiz2&quot;</keyword>
-                  <keyword>&quot;Quiz3&quot;</keyword>
-                  <keyword>&quot;Quiz4&quot;</keyword>
-                  <keyword>&quot;Quiz5&quot;</keyword>
-                  <keyword>&quot;Quiz6&quot;</keyword>
-                  <keyword>&quot;Quiz7&quot;</keyword>
-                  <keyword>&quot;Quiz8&quot;</keyword>
-                  <keyword>&quot;Quiz9&quot;</keyword>
-                  <keyword>&quot;Quiz10&quot;</keyword>
+                  <keyword>&quot;quiz1&quot;</keyword>
+                  <keyword>&quot;quiz2&quot;</keyword>
+                  <keyword>&quot;quiz3&quot;</keyword>
+                  <keyword>&quot;quiz4&quot;</keyword>
+                  <keyword>&quot;quiz5&quot;</keyword>
+                  <keyword>&quot;quiz6&quot;</keyword>
+                  <keyword>&quot;quiz7&quot;</keyword>
+                  <keyword>&quot;quiz8&quot;</keyword>
+                  <keyword>&quot;quiz9&quot;</keyword>
+                  <keyword>&quot;quiz10&quot;</keyword>
                   <keyword></keyword>
                 </keywords>
               </pluginContent>
@@ -2249,6 +2249,16 @@ class MyClass(GeneratedClass):
             <Link inputowner="11" indexofinput="2" outputowner="23" indexofoutput="4" />
             <Link inputowner="11" indexofinput="2" outputowner="24" indexofoutput="4" />
             <Link inputowner="11" indexofinput="2" outputowner="25" indexofoutput="4" />
+            <Link inputowner="1" indexofinput="4" outputowner="3" indexofoutput="6" />
+            <Link inputowner="1" indexofinput="4" outputowner="20" indexofoutput="6" />
+            <Link inputowner="1" indexofinput="4" outputowner="4" indexofoutput="6" />
+            <Link inputowner="1" indexofinput="4" outputowner="7" indexofoutput="6" />
+            <Link inputowner="1" indexofinput="4" outputowner="10" indexofoutput="6" />
+            <Link inputowner="1" indexofinput="4" outputowner="9" indexofoutput="6" />
+            <Link inputowner="1" indexofinput="4" outputowner="14" indexofoutput="6" />
+            <Link inputowner="1" indexofinput="4" outputowner="16" indexofoutput="6" />
+            <Link inputowner="1" indexofinput="4" outputowner="18" indexofoutput="6" />
+            <Link inputowner="1" indexofinput="4" outputowner="22" indexofoutput="6" />
           </Diagram>
         </BehaviorKeyframe>
       </BehaviorLayer>
