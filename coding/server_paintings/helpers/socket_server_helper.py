@@ -104,11 +104,11 @@ def manage_message(message):
 
     if (source == 'app' and destination == 'arduino' and body in [str(i) for i in range(1, 11)]):
         status = -1
-    elif (source == 'arduino' and destination == 'nao' and body in [str(i) for i in range(1, 11)]):
+    elif ('arduino' in source and 'nao' in destination and body in [str(i) for i in range(1, 11)]):
         status = int(body)
         WebBrowser.open_window(body)
-    elif (source == 'nao' and destination == 'arduino'):
+    elif (source == 'nao' and destination == 'arduino' and body in [str(i) for i in range(1, 11)]):
         status = -1
         WebBrowser.close_window()
-    elif (source == 'arduino' and destination == 'app'):
+    elif (source == 'arduino' and destination == 'app' and body in [str(i) for i in range(1, 11)]):
         status = 0

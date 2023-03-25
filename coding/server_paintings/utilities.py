@@ -20,7 +20,7 @@ def read_yaml(file_path):
 
 
 def get_file_path(painting):
-    painting_path = f'{path.dirname(__file__)}\..\..\social\website_purgatorio\quadri\quadro_{painting}\index.html'
+    painting_path = 'file:///' + f'{path.dirname(__file__)}/../../social/website_purgatorio/quadri/quadro_{painting}/index.html'
     painting_path = path.normpath(painting_path)
 
     return painting_path

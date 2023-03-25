@@ -67,10 +67,9 @@ void loop() {
     }
   } 
   else {
-    data = receiveData();
+    data = String(receiveData());
     
-    // ANDATA
-    if (data == "app_1_arduino"){
+    if (data == "app_1_arduino"){       // ANDATA
       Serial.println("Start - NaoCar");
       pinMode(STBY, OUTPUT);
       forward(motor1, motor2, velocity);   
@@ -80,17 +79,17 @@ void loop() {
       Serial.println("End - NaoCar");
       sendData("arduino_1_nao");
     }
-    if (data == "app_2_arduino"){
+    else if (data == "app_2_arduino"){
       Serial.println("Start - NaoCar");
       pinMode(STBY, OUTPUT);
       forward(motor1, motor2, velocity);   
-      delay(10000);
+      delay(4000);
       brake(motor1, motor2);
       pinMode(STBY, INPUT);
       Serial.println("End - NaoCar");
       sendData("arduino_2_nao");
     }
-    if (data == "app_3_arduino"){
+    else if (data == "app_3_arduino"){
       Serial.println("Start - NaoCar");
       pinMode(STBY, OUTPUT);
       forward(motor1, motor2, velocity);   
@@ -100,7 +99,7 @@ void loop() {
       Serial.println("End - NaoCar");
       sendData("arduino_3_nao");
     }
-    if (data == "app_4_arduino"){
+    else if (data == "app_4_arduino"){
       Serial.println("Start - NaoCar");
       pinMode(STBY, OUTPUT);
       forward(motor1, motor2, velocity);   
@@ -110,7 +109,7 @@ void loop() {
       Serial.println("End - NaoCar");
       sendData("arduino_4_nao");
     }
-    if (data == "app_5_arduino"){
+    else if (data == "app_5_arduino"){
       Serial.println("Start - NaoCar");
       pinMode(STBY, OUTPUT);
       forward(motor1, motor2, velocity);   
@@ -120,7 +119,7 @@ void loop() {
       Serial.println("End - NaoCar");
       sendData("arduino_5_nao");
     }
-    if (data == "app_6_arduino"){
+    else if (data == "app_6_arduino"){
       Serial.println("Start - NaoCar");
       pinMode(STBY, OUTPUT);
       forward(motor1, motor2, velocity);   
@@ -130,7 +129,7 @@ void loop() {
       Serial.println("End - NaoCar");
       sendData("arduino_6_nao");
     }
-    if (data == "app_7_arduino"){
+    else if (data == "app_7_arduino"){
       Serial.println("Start - NaoCar");
       pinMode(STBY, OUTPUT);
       forward(motor1, motor2, velocity);   
@@ -140,7 +139,7 @@ void loop() {
       Serial.println("End - NaoCar");
       sendData("arduino_7_nao");
     }
-    if (data == "app_8_arduino"){
+    else if (data == "app_8_arduino"){
       Serial.println("Start - NaoCar");
       pinMode(STBY, OUTPUT);
       forward(motor1, motor2, velocity);   
@@ -150,7 +149,8 @@ void loop() {
       Serial.println("End - NaoCar");
       sendData("arduino_8_nao");
     }
-    if (data == "app_9_arduino"){
+    /*
+    else if (data == "app_9_arduino"){
       Serial.println("Start - NaoCar");
       pinMode(STBY, OUTPUT);
       forward(motor1, motor2, velocity);   
@@ -160,7 +160,7 @@ void loop() {
       Serial.println("End - NaoCar");
       sendData("arduino_9_nao");
     }
-    if (data == "app_10_arduino"){
+    else if (data == "app_10_arduino"){
       Serial.println("Start - NaoCar");
       pinMode(STBY, OUTPUT);
       forward(motor1, motor2, velocity);   
@@ -170,10 +170,8 @@ void loop() {
       Serial.println("End - NaoCar");
       sendData("arduino_10_nao");
     }
-
-
-    // RITORNO
-    if (data == "﻿nao_1_arduino"){
+    */
+    else if (data == "nao_1_arduino"){  // RITORNO
       Serial.println("Start - NaoCar");
       pinMode(STBY, OUTPUT);
       back(motor1, motor2, velocity);   
@@ -181,9 +179,9 @@ void loop() {
       brake(motor1, motor2);
       pinMode(STBY, INPUT);
       Serial.println("End - NaoCar");
-      sendData("arduino_1_nao");
+      sendData("arduino_1_app");
     }
-    if (data == "﻿nao_2_arduino"){
+    else if (data == "nao_2_arduino"){  
       Serial.println("Start - NaoCar");
       pinMode(STBY, OUTPUT);
       back(motor1, motor2, velocity);   
@@ -191,9 +189,9 @@ void loop() {
       brake(motor1, motor2);
       pinMode(STBY, INPUT);
       Serial.println("End - NaoCar");
-      sendData("arduino_2_nao");
+      sendData("arduino_2_app");
     }
-    if (data == "﻿nao_3_arduino"){
+    else if (data == "nao_3_arduino"){  
       Serial.println("Start - NaoCar");
       pinMode(STBY, OUTPUT);
       back(motor1, motor2, velocity);   
@@ -201,9 +199,9 @@ void loop() {
       brake(motor1, motor2);
       pinMode(STBY, INPUT);
       Serial.println("End - NaoCar");
-      sendData("arduino_3_nao");
+      sendData("arduino_3_app");
     }
-    if (data == "﻿nao_4_arduino"){
+    else if (data == "nao_4_arduino"){  
       Serial.println("Start - NaoCar");
       pinMode(STBY, OUTPUT);
       back(motor1, motor2, velocity);   
@@ -211,9 +209,9 @@ void loop() {
       brake(motor1, motor2);
       pinMode(STBY, INPUT);
       Serial.println("End - NaoCar");
-      sendData("arduino_4_nao");
+      sendData("arduino_4_app");
     }
-    if (data == "﻿nao_5_arduino"){
+    else if (data == "nao_5_arduino"){  
       Serial.println("Start - NaoCar");
       pinMode(STBY, OUTPUT);
       back(motor1, motor2, velocity);   
@@ -221,9 +219,9 @@ void loop() {
       brake(motor1, motor2);
       pinMode(STBY, INPUT);
       Serial.println("End - NaoCar");
-      sendData("arduino_5_nao");
+      sendData("arduino_5_app");
     }
-    if (data == "﻿nao_6_arduino"){
+    else if (data == "nao_6_arduino"){  
       Serial.println("Start - NaoCar");
       pinMode(STBY, OUTPUT);
       back(motor1, motor2, velocity);   
@@ -231,9 +229,9 @@ void loop() {
       brake(motor1, motor2);
       pinMode(STBY, INPUT);
       Serial.println("End - NaoCar");
-      sendData("arduino_6_nao");
+      sendData("arduino_6_app");
     }
-    if (data == "﻿nao_7_arduino"){
+    else if (data == "nao_7_arduino"){  
       Serial.println("Start - NaoCar");
       pinMode(STBY, OUTPUT);
       back(motor1, motor2, velocity);   
@@ -241,9 +239,9 @@ void loop() {
       brake(motor1, motor2);
       pinMode(STBY, INPUT);
       Serial.println("End - NaoCar");
-      sendData("arduino_7_nao");
+      sendData("arduino_7_app");
     }
-    if (data == "﻿nao_8_arduino"){
+    else if (data == "nao_8_arduino"){  
       Serial.println("Start - NaoCar");
       pinMode(STBY, OUTPUT);
       back(motor1, motor2, velocity);   
@@ -251,9 +249,10 @@ void loop() {
       brake(motor1, motor2);
       pinMode(STBY, INPUT);
       Serial.println("End - NaoCar");
-      sendData("arduino_8_nao");
+      sendData("arduino_8_app");
     }
-    if (data == "﻿nao_9_arduino"){
+    /*
+    else if (data == "nao_9_arduino"){  
       Serial.println("Start - NaoCar");
       pinMode(STBY, OUTPUT);
       back(motor1, motor2, velocity);   
@@ -261,9 +260,9 @@ void loop() {
       brake(motor1, motor2);
       pinMode(STBY, INPUT);
       Serial.println("End - NaoCar");
-      sendData("arduino_9_nao");
+      sendData("arduino_9_app");
     }
-    if (data == "﻿nao_10_arduino"){
+    else if (data == "nao_10_arduino"){ 
       Serial.println("Start - NaoCar");
       pinMode(STBY, OUTPUT);
       back(motor1, motor2, velocity);   
@@ -271,10 +270,10 @@ void loop() {
       brake(motor1, motor2);
       pinMode(STBY, INPUT);
       Serial.println("End - NaoCar");
-      sendData("arduino_10_nao");
+      sendData("arduino_10_app");
     }
+    */
     
-  
     if (client.connected()) {
       String promptString = Serial.readString();
       if (promptString != "") {
