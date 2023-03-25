@@ -28,8 +28,8 @@ public class AugmentedImageRenderer {
   }
 
   public void setupPaintingDetails (Context context, int paintingIndex) throws IOException {
-    imageLocationMap = new QuadRenderer(0.5f, 0.5f, 0);
-    imageDetailsText = new QuadRenderer(1.84f, 1.38f, 0);
+    imageLocationMap = new QuadRenderer(0.3f, 0.3f, 0);
+    imageDetailsText = new QuadRenderer(1f, 0.6f, 0);
 
     switch (paintingIndex) {
       case 1:
@@ -88,61 +88,61 @@ public class AugmentedImageRenderer {
       case 1:
         localBoundaryPoses = new Pose[]{
               Pose.makeTranslation(
-                      -1.3f * augmentedImage.getExtentX(),
-                      0.0f,
-                      0.0f * augmentedImage.getExtentZ()),
+                      -0.8f * augmentedImage.getExtentX(),
+                      0f,
+                      -0.8f * augmentedImage.getExtentZ()),
               Pose.makeTranslation(
-                      1.0f * augmentedImage.getExtentX(),
-                      0.0f,
-                      -0.1f * augmentedImage.getExtentZ()),
+                      0f * augmentedImage.getExtentX(),
+                      0f,
+                      0f * augmentedImage.getExtentZ()),
         };
         break;
       case 2:
         localBoundaryPoses = new Pose[]{
                 Pose.makeTranslation(
-                        -1.3f * augmentedImage.getExtentX(),
-                        0.0f,
-                        -0.5f * augmentedImage.getExtentZ()),
+                        -0.8f * augmentedImage.getExtentX(),
+                        0f,
+                        -0.8f * augmentedImage.getExtentZ()),
                 Pose.makeTranslation(
-                        0.1f * augmentedImage.getExtentX(),
-                        0.0f,
-                        0.0f * augmentedImage.getExtentZ()),
+                        0f * augmentedImage.getExtentX(),
+                        0f,
+                        0f * augmentedImage.getExtentZ()),
         };
         break;
       case 3:
         localBoundaryPoses = new Pose[]{
                 Pose.makeTranslation(
-                        1.3f * augmentedImage.getExtentX(),
-                        0.0f,
-                        0.0f * augmentedImage.getExtentZ()),
+                        -0.8f * augmentedImage.getExtentX(),
+                        0f,
+                        -0.8f * augmentedImage.getExtentZ()),
                 Pose.makeTranslation(
-                        -0.1f * augmentedImage.getExtentX(),
-                        0.0f,
-                        0.0f * augmentedImage.getExtentZ()),
+                        0f * augmentedImage.getExtentX(),
+                        0f,
+                        0f * augmentedImage.getExtentZ()),
         };
         break;
       case 8:
         localBoundaryPoses = new Pose[]{
                 Pose.makeTranslation(
-                        -1.3f * augmentedImage.getExtentX(),
-                        0.0f,
-                        0.0f * augmentedImage.getExtentZ()),
+                        -0.8f * augmentedImage.getExtentX(),
+                        0f,
+                        -0.8f * augmentedImage.getExtentZ()),
                 Pose.makeTranslation(
-                        0.01f * augmentedImage.getExtentX(),
-                        0.0f,
-                        -0.1f * augmentedImage.getExtentZ()),
+                        0.2f * augmentedImage.getExtentX(),
+                        0f,
+                        0f * augmentedImage.getExtentZ()),
         };
         break;
       default:
         localBoundaryPoses = new Pose[]{
                 Pose.makeTranslation(
-                        -1.3f * augmentedImage.getExtentX(),
-                        0.0f,
-                        0.0f * augmentedImage.getExtentZ()),
+                        -0.8f * augmentedImage.getExtentX(),
+                        0f,
+                        -0.8f * augmentedImage.getExtentZ()),
                 Pose.makeTranslation(
-                        0.0f * augmentedImage.getExtentX(),
-                        0.0f,
-                        0.0f * augmentedImage.getExtentZ()),
+                        0f * augmentedImage.getExtentX(),
+                        0f,
+                        0f * augmentedImage.getExtentZ()),
         };
         break;
     }
