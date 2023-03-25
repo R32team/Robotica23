@@ -51,7 +51,7 @@ void setup() {
   }
 }
 
-int velocity = 100;  // max-velocity: 255
+int velocity = 200;  // max-velocity: 255
 
 void loop() {
   
@@ -84,7 +84,7 @@ void loop() {
       Serial.println("Start - NaoCar");
       pinMode(STBY, OUTPUT);
       forward(motor1, motor2, velocity);   
-      delay(4000);
+      delay(10000);
       brake(motor1, motor2);
       pinMode(STBY, INPUT);
       Serial.println("End - NaoCar");
