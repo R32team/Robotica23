@@ -2646,20 +2646,39 @@ input, select, textarea {
 				width: 80%;
 			}
 
+		.imagenao {
+			display: block;
+			margin: 4rem 0;
+			width: 40%;
+			float: left;
+		}
+
+			.imagenao:first-child {
+				margin-top: 20px;
+			}
+
+			.imagenao img {
+				width: 80%;
+			}
+
 		.image3 {
 			display: block;
 			margin: 0rem 0;
-			width: 20%;
+			width: 16%;
 			float: left;
 		}
 
 			.image3:first-child {
-				margin-right: 4rem;
+				margin-right: 10rem;
 			}
 
 			.image3 img {
 				width: 80%;
 			}
+
+		.video {
+			margin-top: 20px;
+		}
 
 
 		@media screen and (max-width: 736px) {
