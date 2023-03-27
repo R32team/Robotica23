@@ -18,7 +18,7 @@ Contiene:
 ### SOCIAL
 
 La cartella [SOCIAL](https://github.com/R32team/Robotica23/tree/main/social) contiene:
-- le [illustrazioni]https://github.com/R32team/Robotica23/tree/main/social/asset_purgatorio() per il nao del purgatorio  
+- le [illustrazioni](https://github.com/R32team/Robotica23/tree/main/social/asset_purgatorio) per il nao del purgatorio  
 - il logo
 - il [sito principale](https://r32.altervista.org/)
 
