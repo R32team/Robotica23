@@ -47,9 +47,9 @@
 					<h1>Il nostro progetto</h1>
 				</header>
 				<h3>Introduzione</h3>
-				<p>Il nostro progetto si pone come principale obiettivo quello di creare una mostra accessibile a tutti sfondando idealmente tutte le barriere fisiche e intellettuali.
+				<p>Il nostro progetto si pone come principale obiettivo quello di creare una mostra accessibile a tutti sfondando idealmente tutte le barriere fisiche e intellettuali. <br>
 
-				Le opere esposte sono legate a un unico filo conduttore: il Purgatorio di Dante. Il tema è la continuazione del progetto iniziato nel 2022 e riguardante l’Inferno; un’altra caratteristica comune ai due progetti è NAO, un robot umanoide che ha un ruolo attivo nell’esposizione orale e nella spiegazione della mostra, quasi prendendo per mano il visitatore.
+				Le opere esposte sono legate a un unico filo conduttore: il Purgatorio di Dante. Il tema è la continuazione del progetto iniziato nel 2022 e riguardante l’Inferno; un’altra caratteristica comune ai due progetti è NAO, un robot umanoide che ha un ruolo attivo nell’esposizione orale e nella spiegazione della mostra, quasi prendendo per mano il visitatore.<br>
 
 				Castel San Pietro, sulle colline veronesi, fa da splendida cornice alla mostra aprendo per la prima volta le porte a un evento culturale.</p>
 				<center><div class="image main"><img src="verona_sanpietro.jpeg" alt="" /></div><center>
@@ -58,53 +58,62 @@
 			</section>
 
 			<section class="post">
-				<h3>Nao e Arduino</h3>
+				<h3>Il robot umanoide NAO</h3>
 				<div class="imagenao"><img src="naoimg1.png" alt="" /></div>
-				<p>L’ospite d’onore è NAO, che si muove su un supporto mobile guidato da Arduino (una piattaforma hardware composta da una serie di schede elettroniche dotate di un microcontrollore).
-
+				<p>L’ospite d’onore è NAO, che si muove su un supporto mobile guidato da Arduino (una piattaforma hardware composta da una serie di schede elettroniche dotate di un microcontrollore). NAO è stato il primo robot creato da Aldebaran, azienda leader nella robotica umanoide. Famoso in tutto il mondo, è uno strumento di programmazione diventato ormai un riferimento nell'istruzione e nella ricerca. <br>
+				NAO viene anche utilizzato come assistente presso aziende e centri sanitari per accogliere, informare e intrattenere i visitatori. NAO è stato programmato tramite Choreographe, software di programmazione a blocchi, scritti in linguaggio Python.<br>
 				Per l’occasione il robot umanoide indosserà gli abiti rossi del Sommo Poeta.
+				</p>
 
-				La piattaforma su cui è seduto NAO/Dante è composta da quattro motori, collegati a un Arduino, ciascuno dei quali mette in moto due ruote. Il supporto trasporta NAO nella stanza in cui sono esposte le opere, tutte sulla stessa parete disposte seguendo l’ordine dei canti del Purgatorio.
-
-				Sia NAO sia Arduino sono stati programmati dal gruppo coding del Team R32, mentre altri studenti del gruppo si sono occupati della parte social intesa come campagna pubblicitaria e comunicazione del progetto.</p>
+			</section>
+			<h3>La NAOcar e Arduino</h3>
+				<div class="imagenao"><img src="naocar.jpg" alt="" /></div>
+				<p>La piattaforma NAOcar su cui è seduto NAO/Dante è composta da quattro motori, collegati a un Arduino, ciascuno dei quali mette in moto due ruote. <br>
+				Per crearla sono stati fissati con la colla a caldo i motori a un supporto di legno; sono poi stati saldati dei cavi che mettessero in comunicazione i quattro motori con le batterie e Arduino, anche esso incollato al supporto di legno.<br>
+				Arduino, infine, è stato collegato al wifi shield, un’antenna wifi che gli permette la comunicazione con il server, costituito da un computer. <br>
+				Attraverso il server posso comunicare tra loro Arduino, NAO e l’applicazione per visualizzare i testi di descrizione delle opere. Arduino e NAO sono i client, collegati al server grazie al protocollo TCP/IP su Socket. TCP/IP è un protocollo di collegamento dati utilizzato in Internet per consentire a computer e altri dispositivi di inviare e ricevere dati. TCP/IP sta per Transmission Control Protocol/Internet Protocol, cioè un sistema che consente ai dispositivi connessi a Internet di comunicare tra loro attraverso le reti.
+				Un socket è un oggetto software che permette l'invio e la ricezione di dati.
+				Il supporto trasporta NAO nella stanza in cui sono esposte le opere, tutte sulla stessa parete disposte seguendo l’ordine dei canti del Purgatorio.<br>
+				Sia NAO sia Arduino sono stati programmati dal gruppo coding del Team R32, mentre altri studenti del gruppo si sono occupati della parte social intesa come campagna pubblicitaria e comunicazione del progetto. 
+				</p>
 			</section>
 
 			<section class="post">
 				<h3>Il Purgatorio multimediale</h3>
-				<p>La mostra del 2023, rispetto a quella precedente che aveva come tema l’Inferno, si focalizza soprattutto sull’inclusione: infatti il percorso è pensato in particolare per coloro i quali normalmente si trovano di fronte a degli ostacoli quando si tratta di fruire di temi e ambienti diversi da quelli quotidiani e facilmente accessibili a persone normodotate.
-
-				I visitatori hanno a disposizione un tablet, sul quale è stata installata un’applicazione per il riconoscimento delle opere: attraverso la AR (realtà aumentata) basta semplicemente inquadrare l’opera che si ha di fronte per poterne ascoltare la descrizione.
-
-				Appena il dispositivo avrà riconosciuto l’immagine, invierà un segnale che farà partire NAO e la sua piattaforma. Raggiunta l’opera, la base si ferma e NAO inizia la sua spiegazione accompagnando i visitatori in un viaggio multimediale nel Purgatorio.
-
-				Il nostro obiettivo però non è solamente la diffusione dei contenuti della mostra, ma anche e soprattutto garantire a tutti la possibilità di poterne apprezzare la bellezza. Per questo abbiamo ideato soluzioni differenti, per soddisfare le esigenze di tutti.</p>
-				<div class="image main"><img src="il_mio_purgatorio.jpg" alt="" /></div>
+				<p>La mostra del 2023, rispetto a quella precedente che aveva come tema l’Inferno, però, si focalizza soprattutto sull’inclusione: infatti il percorso è pensato in particolare per coloro i quali normalmente si trovano di fronte a degli ostacoli quando si tratta di fruire di temi e ambienti diversi da quelli quotidiani e facilmente accessibili a persone normodotate.<br>
+				I visitatori hanno a disposizione un tablet, sul quale è stata installata un’applicazione per il riconoscimento delle opere: attraverso la AR (realtà aumentata) basta semplicemente inquadrare l’opera che si ha di fronte per poterne ascoltare la descrizione e contemporaneamente visualizzare sul tablet l’immagine inquadrata affiancata da box contenenti testi e disegni realizzati dal Team R32.<br>
+				Appena il dispositivo avrà riconosciuto l’immagine, infatti, invierà un segnale che farà partire NAO e la sua piattaforma. Raggiunta l’opera, la base si ferma e NAO inizia la sua spiegazione accompagnando i visitatori in un viaggio multimediale nel Purgatorio. La comunicazione con Arduino e NAO avviene sempre tramite il server: in particolare, le pagine web vengono visualizzate grazie alla libreria Python Webbrowser.<br>
+				Il nostro obiettivo però non è solamente la diffusione dei contenuti della mostra, ma anche e soprattutto garantire a tutti la possibilità di poterne apprezzare la bellezza. Per questo abbiamo ideato soluzioni differenti, per soddisfare le esigenze di tutti.
+				</p>
+				<div class="image main"><img src="descrizione_purgatorio.png" alt="" /></div>
 			</section></p>
 
 			<section class="post">
 				<h3>Una mostra inclusiva</h3>
-				<p>Le persone ipovedenti hanno a disposizione una tavoletta braille che le accompagna nel percorso di visita e contemporaneamente possono ascoltare la spiegazione delle opere.
+				<p>Le persone ipovedenti hanno a disposizione una tavoletta braille che le accompagna nel percorso di visita e contemporaneamente possono ascoltare la spiegazione delle opere.<br>
 
-				Le persone non udenti trovano, in fianco ai testi esplicativi delle opere, un video di una persona che commenta i contenuti attraverso il linguaggio dei segni. Per questo un grazie particolare va a Fiorella Rubele che ci ha permesso di metterci in contatto con Alessandro Zambon, interprete dei video.
+				Le persone non udenti trovano, in fianco ai testi esplicativi delle opere, un video di una persona che commenta i contenuti attraverso il linguaggio dei segni. Per questo un grazie particolare va a Fiorella Rubele che ci ha permesso di metterci in contatto con Alessandro Zambon, interprete dei video.<br>
 
 				Anche NAO è stato programmato per favorire un percorso inclusivo: quando arriva di fronte a un’opera, mentre lui la descrive su uno schermo posto nella sala vengono proiettate le pagine del sito web progettato dal Team R32 che affiancano una foto dell’opera in oggetto al video della persona che la racconta con il linguaggio dei segni e al testo ad essa relativo.
 
-				Questo testo è in carattere Arial per aiutare i ragazzi con DSA (Disturbi Specifici dell’Apprendimento).
+				Questo testo è in carattere Arial per aiutare i ragazzi con DSA (Disturbi Specifici dell’Apprendimento).<br>
 
 				La mostra presenta anche degli accorgimenti pensati specificatamente per i bambini, che hanno la possibilità di porre a NAO dei quiz al termine della descrizione di ciascuna opera; in questo modo si rende la loro visita più ammaliante e  interattiva.
+				</p>
+				<div class="image main"><img src="tavolabraile.jpg" alt="" /></div>
 
-				È stata pensata anche una visita virtuale per persone impossibilitate a recarsi sul luogo della mostra.</p>
-				<iframe height="500px" width="100%" allowfullscreen="true" src="https://momento360.com/e/u/fd5d7611705743be8a0f6c4699bab5ee?utm_campaign=embed&utm_source=other&heading=33.22&pitch=-18&field-of-view=75&size=medium&display-plan=true"> </iframe>
-				<div class="image main"><img src="descrizione_purgatorio.png" alt="" /></div>
+				<h3>Virtual tour</h3>
+				<p>È stata pensata anche una visita virtuale per persone impossibilitate a recarsi sul luogo della mostra.
+				</p>
+
+				<iframe height="500px" width="100%" allowfullscreen="true" src="https://momento360.com/e/u/fd5d7611705743be8a0f6c4699bab5ee?utm_campaign=embed&utm_source=other&heading=33.22&pitch=-18&field-of-view=75&size=medium&display-plan=true"> </iframe><br><br><br>
+
 			<h2><U>VIDEO DI PRESENTAZIONE</U></h2>
 			<h3>Presentazione del Team</h3> 
-			Testo <br><br>
 			<center><iframe width="560" height="315" src="https://www.youtube.com/embed/P6VZcTLqf-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center><br>
 			<h3>Presentazione del problema e del progetto</h3>
-			Testo <br><br>
 			<center><iframe width="560" height="315" src="https://www.youtube.com/embed/P6VZcTLqf-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center><br>
 			<h3>Presentazione della soluzione al problema</h3>
-			Testo <br><br> 
 			<center><iframe width="560" height="315" src="https://www.youtube.com/embed/P6VZcTLqf-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center><br>				
 			</section></p>
 
