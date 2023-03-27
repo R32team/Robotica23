@@ -2646,6 +2646,22 @@ input, select, textarea {
 				width: 80%;
 			}
 
+		.image3 {
+			display: block;
+			margin: 0rem 0;
+			width: 20%;
+			float: left;
+		}
+
+			.image3:first-child {
+				margin-right: 4rem;
+			}
+
+			.image3 img {
+				width: 80%;
+			}
+
+
 		@media screen and (max-width: 736px) {
 
 			.image.fit {
