@@ -1,26 +1,24 @@
 # Robotica23
 
+![alt text](https://github.com/R32team/Robotica23/blob/main/social/website_main/R32-logo.ico)
+
 ## Olimpiadi di robotica
 
 ACCESSIBILITÀ
 
-### Date
+### CODING
 
-- 30/03/2023 consegna progetto
+La cartella [CODING](https://github.com/R32team/Robotica23/tree/main/coding) presenta tutti i file che riguardano la parte Coding dell'intero progetto.
+Contiene:
+- [L'app](https://github.com/R32team/Robotica23/tree/main/coding/app_controller)....
+- Il codice [arduino](https://github.com/R32team/Robotica23/tree/main/coding/arduino_finale) finale con la sua libreria.
+- Il [progetto per il nao](https://github.com/R32team/Robotica23/tree/main/coding/nao_project) e il voice over.
+- I codici necessari per il funzionamento del [server](https://github.com/R32team/Robotica23/tree/main/coding/server_paintings).
 
-### Requisiti
+### SOCIAL
 
-- Video presentazione
-- Video analisi
-- Video sul lavoro finito
-- Documento su scopo, funzionamento, design (sito web)
+La cartella [SOCIAL](https://github.com/R32team/Robotica23/tree/main/social) contiene:
+- le [illustrazioni](https://github.com/R32team/Robotica23/tree/main/social/asset_purgatorio) per il nao del purgatorio  
+- il logo
+- il [sito principale](https://r32.altervista.org/)
 
-### Progetto
-
-Progetto dell'anno scorso adattato a *purgatorio*
-
-- Interattività con bambini
-- Quiz
-- Giochi
-- Spike LEGO
-- Arduino
