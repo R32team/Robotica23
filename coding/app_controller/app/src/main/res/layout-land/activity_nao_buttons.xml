@@ -329,7 +329,7 @@
                     android:contentDescription="@string/title_painting_6"
                     android:scaleType="centerCrop"
                     android:src="@drawable/painting_5"
-                    app:layout_constraintDimensionRatio="25:20"
+                    app:layout_constraintDimensionRatio="30:20"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />

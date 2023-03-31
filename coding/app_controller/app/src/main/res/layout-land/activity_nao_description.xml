@@ -50,7 +50,9 @@
                 android:id="@+id/txt_painting_description"
                 android:text="@string/description_painting_1"
                 style="@style/PaintingDescriptionButtonTextStyle"
-                android:textColor="@color/main_color"/>
+                android:textColor="@color/main_color"
+                android:shadowColor="@color/transparent"
+                android:backgroundTint="@color/transparent"/>
 
         </ScrollView>
 
