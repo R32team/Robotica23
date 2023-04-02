@@ -1,6 +1,6 @@
 # Robotica23
 
-![alt text](https://github.com/R32team/Robotica23/blob/main/social/website_main/R32-logo.ico)
+![alt text](https://github.com/R32team/Robotica23/blob/main/social/website_main/images/R32-logo.ico)
 
 ## Olimpiadi di robotica
 
