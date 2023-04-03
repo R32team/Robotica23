@@ -152,7 +152,7 @@ public class NaoButtons extends AppCompatActivity {
 
 
     private void createSettingsDialog() {
-        Button okButton, cancelButton, followButton, statsButton, backButton, resetStatsButton;
+        Button okButton, cancelButton, statsButton, backButton, resetStatsButton;
         TextInputEditText ipEditText, portEditText;
         TextView arPaintingsDescribed, paintingsDescribed, paintingsRecognised;
         CardView statsCardView, settingsCardView;
@@ -163,7 +163,6 @@ public class NaoButtons extends AppCompatActivity {
         portEditText = settingsPopupView.findViewById(R.id.port_edit_text);
         okButton = settingsPopupView.findViewById(R.id.btn_ok);
         cancelButton = settingsPopupView.findViewById(R.id.btn_annulla);
-        followButton = settingsPopupView.findViewById(R.id.btn_follow);
         statsButton = settingsPopupView.findViewById(R.id.btn_stats);
         backButton = settingsPopupView.findViewById(R.id.btn_back);
         resetStatsButton = settingsPopupView.findViewById(R.id.btn_reset_stats);
@@ -194,15 +193,6 @@ public class NaoButtons extends AppCompatActivity {
         dialogSettings.getWindow().setBackgroundDrawableResource(R.color.transparent);
         dialogSettings.show();
 
-        followButton.setOnClickListener(view -> {
-            if (ip.equals("") || port.equals("")) {
-                messageSnackbarHelper.showMessage(this, "Imposta l'ip e la porta per riuscire a comunicare con il NAO");
-                return;
-            }
-            MessageSender sender = new MessageSender();
-            sender.execute("app_follow_nao", ip, port);
-        });
-
         okButton.setOnClickListener(view -> {
             this.ip = Objects.requireNonNull(ipEditText.getText()).toString();
             this.port = Objects.requireNonNull(portEditText.getText()).toString();
@@ -210,9 +200,6 @@ public class NaoButtons extends AppCompatActivity {
         });
 
         cancelButton.setOnClickListener(view -> dialogSettings.dismiss());
-
-
-        followButton.setOnClickListener(view -> dataSender("error", ip, port));
 
         backButton.setOnClickListener(v -> {
             settingsCardView.setVisibility(View.VISIBLE);

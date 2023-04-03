@@ -2,9 +2,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="500dp"
+    android:maxWidth="500dp"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:maxWidth="500dp">
+    android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card_view_settings"
@@ -36,22 +36,7 @@
                     android:layout_gravity="start|top"
                     android:layout_weight="5"
                     android:text="@string/btn_settings"
-                    android:textColor="@color/main_color" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btn_follow"
-                    android:layout_width="80dp"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_gravity="end|top"
-                    android:layout_weight="2"
-                    android:insetTop="0dp"
-                    android:insetBottom="0dp"
-                    android:backgroundTint="@color/background_gradient_start"
-                    android:text="@string/btn_follow"
-                    android:textColor="@color/white"
-                    app:cornerRadius="20dp"/>
+                    android:textColor="@color/black" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_stats"
@@ -66,7 +51,8 @@
                     android:backgroundTint="@color/background_gradient_start"
                     app:icon="@drawable/ic_stats"
                     android:text="@string/btn_stats"
-                    app:cornerRadius="20dp"/>
+                    app:cornerRadius="20dp"
+                    android:textAppearance="@style/ButtonTextStyle"/>
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -156,7 +142,7 @@
                     android:insetTop="0dp"
                     android:insetBottom="0dp"
                     android:layout_marginHorizontal="25dp"
-                    android:backgroundTint="@color/main_color"
+                    android:backgroundTint="@color/button_background"
                     android:text="@string/btn_ok"
                     android:textColor="@color/white"
                     app:cornerRadius="20dp"/>
@@ -171,9 +157,9 @@
                     android:insetTop="0dp"
                     android:insetBottom="0dp"
                     android:textAllCaps="true"
-                    android:textColor="@color/main_color"
+                    android:textColor="@color/black"
                     app:cornerRadius="20dp"
-                    app:strokeColor="@color/main_color"
+                    app:strokeColor="@color/black"
                     app:strokeWidth="2dp"/>
 
             </androidx.appcompat.widget.LinearLayoutCompat>
@@ -215,7 +201,8 @@
                     android:insetBottom="0dp"
                     android:textColor="@color/white"
                     app:cornerRadius="20dp"
-                    app:icon="@drawable/ic_back" />
+                    app:icon="@drawable/ic_back"
+                    android:textAppearance="@style/ButtonTextStyle"/>
 
                 <TextView
                     style="@style/TitleTextStyle"
@@ -228,7 +215,7 @@
                     android:gravity="start|center_vertical"
                     android:text="@string/stats"
                     android:textAlignment="textStart"
-                    android:textColor="@color/main_color" />
+                    android:textColor="@color/black" />
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -259,7 +246,7 @@
                     android:layout_marginEnd="10dp"
                     android:text="@null"
                     android:textAlignment="textEnd"
-                    android:textColor="@color/main_color"
+                    android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -290,7 +277,7 @@
                     android:layout_marginEnd="10dp"
                     android:text="@null"
                     android:textAlignment="textEnd"
-                    android:textColor="@color/main_color"
+                    android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -321,7 +308,7 @@
                     android:layout_marginEnd="10dp"
                     android:text="@null"
                     android:textAlignment="textEnd"
-                    android:textColor="@color/main_color"
+                    android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -335,13 +322,14 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="10dp"
-                android:backgroundTint="@color/main_color"
+                android:backgroundTint="@color/button_background"
                 android:foregroundGravity="center"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
                 android:text="@string/btn_reset_stats"
                 android:textColor="@color/white"
-                app:cornerRadius="20dp" />
+                app:cornerRadius="20dp"
+                android:textAppearance="@style/ButtonTextStyle"/>
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
