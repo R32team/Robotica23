@@ -20,7 +20,7 @@
         <item name="cardCornerRadius">20dp</item>
     </style>
 
-    <style name="TitleTextStyle">
+    <style name="TitleTextStyle" parent="@android:style/TextAppearance">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textStyle">bold</item>
@@ -29,7 +29,7 @@
         <item name="android:textAlignment">center</item>
     </style>
 
-    <style name="ButtonTextStyle">
+    <style name="ButtonTextStyle" parent="@android:style/TextAppearance">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textStyle">bold</item>
@@ -38,7 +38,7 @@
         <item name="android:textAlignment">center</item>
     </style>
 
-    <style name="TextStyle">
+    <style name="TextStyle" parent="@android:style/TextAppearance">
         <item name="android:layout_width">175dp</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textStyle">normal</item>
@@ -55,7 +55,7 @@
         <item name="android:padding">20dp</item>
     </style>
 
-    <style name="SmallTextStyle">
+    <style name="SmallTextStyle" parent="@android:style/TextAppearance">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:text">@string/logo_name</item>
@@ -64,7 +64,7 @@
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="PaintingDescriptionButtonTextStyle">
+    <style name="PaintingDescriptionButtonTextStyle" parent="@android:style/TextAppearance">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textStyle">normal</item>
