@@ -2651,7 +2651,8 @@ input, select, textarea {
 				float: left;
 				margin-right: 3%;
 				margin-top: 0%;
-				margin-bottom: 0%;
+				margin-bottom: 10%;
+				padding-bottom: 10px;
 			}
 
 		.imagenao {
