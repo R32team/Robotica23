@@ -1,6 +1,6 @@
 # Robotica23
 <p align="center">
-  <img width="500" height="500" src="https://github.com/R32team/Robotica23/blob/main/social/website_main/images/R32-logo.ico">
+  <img width="250" height="250" src="https://github.com/R32team/Robotica23/blob/main/social/website_main/images/R32-logo.ico">
 </p>
 
 ## Olimpiadi di robotica
