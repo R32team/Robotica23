@@ -10,7 +10,7 @@ R32 Un gruppo di ragazzi che amano la robotica e il lavoro di squadra. Il nome c
 ## Project:
 
 L'obiettivo principale del nostro progetto è creare una mostra accessibile a tutti, abbattendo idealmente ogni barriera fisica e intellettuale.
-Le opere in mostra sono legate a un tema comune: il Purgatorio di Dante. Castel San Pietro, sulle colline veronesi, si è rivelata la sede ideale per mostre, aprendo per la prima volta le sue porte ad eventi culturali.
+Le opere in mostra sono legate a un tema comune: il Purgatorio di Dante. Il tema è una continuazione del progetto sull'inferno iniziato nel 2022 da [NaoNexus](https://naonexus.altervista.org/naochallenge2022/index.html). Castel San Pietro, sulle colline veronesi, si è rivelata la sede ideale per mostre, aprendo per la prima volta le sue porte ad eventi culturali.
 
 La mostra verrà presentata dal NAO. Un robot umanoide che si muove su un supporto mobile guidato da Arduino (una piattaforma hardware composta da una serie di schede elettroniche dotate di un microcontrollore). 
 NAO è stato il primo robot creato da Aldebaran, azienda leader nella robotica umanoide. Famoso in tutto il mondo, è uno strumento di programmazione diventato ormai un riferimento nell'istruzione e nella ricerca.
