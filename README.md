@@ -11,7 +11,7 @@ ACCESSIBILITÀ
 
 La cartella [CODING](https://github.com/R32team/Robotica23/tree/main/coding) presenta tutti i file che riguardano la parte Coding dell'intero progetto.
 Contiene:
-- [L'app](https://github.com/R32team/Robotica23/tree/main/coding/app_controller)....
+- [L'app](https://github.com/R32team/Robotica23/tree/main/coding/app_controller) per il riconoscimento delle opere tramite la reealtà aumentata
 - Il codice [arduino](https://github.com/R32team/Robotica23/tree/main/coding/arduino_finale) finale con la sua libreria.
 - Il [progetto per il nao](https://github.com/R32team/Robotica23/tree/main/coding/nao_project) e il voice over.
 - I codici necessari per il funzionamento del [server](https://github.com/R32team/Robotica23/tree/main/coding/server_paintings).
