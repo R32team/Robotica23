@@ -4747,12 +4747,38 @@ input, select, textarea {
 			position: relative;
 			padding-bottom: 56.25%;
 			height: 0;
+			width: ;
 		}
 		
 	.videoWrapper iframe {
 			position: absolute;
 			top: 0;
 			left: 0;
-			width: 100%;
-			height: 100%;
+			width: 30%;
+			height: 30%;
+			float: left;
 	}
+
+
+	.videoWrapper1 {
+			position: relative;
+			padding-bottom: 56.25%;
+			height: 0;
+		}
+		
+	.videoWrapper1 iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 30%;
+			height: 30%;
+			float: right;
+	}
+
+	.impaginazione {
+		text-align: center;
+		
+	}
+
+
+
