@@ -5,7 +5,7 @@ char ssid[] = "STIMATE_ROUTER";       //  your network SSID (name)
 char pass[] = "123456ff";             // your network password
 int status  = WL_IDLE_STATUS;         // the Wifi radio's status
 
-#define HOST "192.168.0.151"
+#define HOST "192.168.0.100"
 #define PORT 5050
 int connected;
 String data;
