@@ -479,6 +479,6 @@ public class ArNaoDescription extends AppCompatActivity implements GLSurfaceView
 
     private void dataSender(String paintingIndex, String ip, String port) {
         MessageSender sender = new MessageSender();
-        sender.execute("app_" + paintingIndex + "_nao", ip, port);
+        sender.execute("app_" + paintingIndex + "_arduino", ip, port);
     }
 }
