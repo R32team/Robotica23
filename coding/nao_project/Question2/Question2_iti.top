@@ -11,7 +11,15 @@ language: iti
 #u:(~hello) ~hello
 
 u:(Ciao [NAO robot]) Ciao, sono pronto a rispondere alle tue domande.
-u:(Chi si stacca dal gruppo che vede Dante?) Manfredi
-u:(Chi dice queste parole Orribil furon li peccati miei; ma la bonta' infinita ha si' gran braccia, che prende cio' che si rivolge a lei?) Manfredi $onStopped=1
+u:(Qual e' il tema principale del terzo canto del Purgatorio?) Il tema principale del terzo canto del Purgatorio sono la penitenza e l'umilta', rappresentate dalle anime dei penitenti che salgono la montagna.
+u:(Chi e' l'anima che incontra Dante all'inizio del canto?) L'anima che incontra Dante all'inizio del terzo canto del Purgatorio e' quella di un uomo chiamato Manfredi. 
+u:(Chi e' Manfredi?) Manfredi e' il figlio illegittimo di Federico II, imperatore del Sacro Romano Impero, e della nobildonna siciliana Bianca Lancia.
+u:(Qual e' il peccato commesso dall'anima che incontra Dante?) Il peccato commesso da Manfredi e' la contumacia, cioe' il non piegarsi, nonostante la gravita' della scomunica, all'autorita' della Chiesa.
+u:(Come descrive Dante la figura di Virgilio nel terzo canto?) Dante descrive Virgilio come un maestro di grande autorita' e sapienza. Lo presenta come colui che e' capace di distinguere le diverse sfumature dei peccati e di guidare Dante attraverso il cammino del Purgatorio. 
+u:(Quali sono i simboli presenti nel terzo canto del Purgatorio?) Tra i simboli presenti nel terzo canto del Purgatorio vi sono il monte, che rappresenta la via dell'ascesa spirituale, e la neve, che simboleggia la purezza dell'anima. 
+u:(Quali sono i passi che Dante e Virgilio compiono per arrivare alla seconda cornice del Purgatorio?) I passi che Dante e Virgilio compiono per arrivare alla seconda cornice del Purgatorio sono descritti nel terzo canto. In sintesi, i due poeti percorrono un sentiero ripido e difficile che li porta a salire lungo la montagna del Purgatorio.
+u:(Cosa rappresenta l'incontro tra Dante e Manfredi nel terzo canto del Purgatorio?)	L'incontro tra Dante e Manfredi nel terzo canto del Purgatorio rappresenta la possibilità di riscatto per il peccatore. Nonostante il peccato di contumacia, Manfredi e' rappresentato come un'anima che ha ancora la speranza di redimersi. 
+u:(In che modo il terzo canto si collega ai canti precedenti e ai successivi nella Commedia di Dante?) Il terzo canto del Purgatorio si collega a quelli precedenti e successivi in quanto rappresenta un momento di transizione tra l'Inferno e il Purgatorio, ovvero tra la punizione e il riscatto delle anime. Inoltre, anticipa il tema della misericordia divina. 
+u:(Che cosa spera di poter ottenere ancora Manfredi?) Manfredi parla della sua speranza di trovare la salvezza attraverso la misericordia di Dio e prega Dante di pregare per la sua anima. La sua figura rappresenta l'idea che anche coloro che sono stati esiliati dalla Chiesa possono pentirsi dei loro peccati e trovare la salvezza. $onStopped=1
 
 
