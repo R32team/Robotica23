@@ -2126,7 +2126,7 @@ class MyClass(GeneratedClass):
         pass
 
     def initServer(self):
-        host = '192.168.0.151' #school robot ip
+        host = '192.168.0.100' #school robot ip
         port = 5050
 
         self.s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

@@ -1,7 +1,7 @@
 # File to test socket
 import socket
 
-IP = '192.168.0.101'
+IP = '192.168.0.100'
 PORT = 5050
 
 if __name__ == '__main__':
