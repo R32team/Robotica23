@@ -69,7 +69,7 @@ def recording():
             #chatGPT
             import openai
 
-            openai.api_key = "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"
+            openai.api_key = ""
             response = openai.ChatCompletion.create(
                 model="gpt-3.5-turbo",
                 messages=[
