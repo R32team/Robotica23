@@ -1,0 +1,4 @@
+server:
+  debug: false
+  host: "0.0.0.0" # Current machine ip
+  port: 5001
